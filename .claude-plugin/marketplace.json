@@ -1,0 +1,142 @@
+{
+  "name": "successmetrics",
+  "owner": {
+    "name": "SuccessMetrics",
+    "email": "guru@successmetrics.io"
+  },
+  "metadata": {
+    "description": "SuccessMetrics Salesforce Public Sector delivery plugins. The judgment runs on sm-agent-core; these are thin clients.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "sm-delivery",
+      "source": "./plugins/sm-delivery",
+      "description": "SuccessMetrics delivery tooling. Org assessment, scoping, estimating, design review, spreadsheet-to-platform migration, quality gates and finding triage for Salesforce engagements. The judgment runs on sm-agent-core; these skills gather input, call it, and render the result.",
+      "version": "0.9.0",
+      "author": {
+        "name": "SuccessMetrics"
+      }
+    },
+    {
+      "name": "lpi-accelerator-factory",
+      "source": "./plugins/lpi-accelerator-factory",
+      "description": "Factory skills for the Salesforce Public Sector LPI Accelerator: turn customer requirements into a tailored extension on one managed base product with editable unmanaged baseline workflows. Includes generate-implementation, incremental delta-add, an org API-name resolver, per-client module scoping, add-on license detection, a permit-type content library, and a test-first quality gate (lpi-test) asserting must-have basics and running Apex+Jest before deploy.",
+      "version": "0.7.0",
+      "author": {
+        "name": "SuccessMetrics"
+      },
+      "keywords": [
+        "salesforce",
+        "public-sector",
+        "pss",
+        "licensing",
+        "permitting",
+        "inspections",
+        "accelerator"
+      ]
+    },
+    {
+      "name": "grant-accelerator-factory",
+      "source": "./plugins/grant-accelerator-factory",
+      "description": "Factory skills for the Salesforce Public Sector Grantmaking Accelerator: turn requirements into a tailored extension on one managed base. Includes generate-implementation (fit-and-finish, DocGen, portal, library-match), an org API-name resolver (catches missing Grantmaking/CDS), module scoping, license detection, grant-add-delta for additive changes, and grant-test \u2014 a contract-driven test-first quality gate.",
+      "version": "0.7.0",
+      "author": {
+        "name": "SuccessMetrics"
+      },
+      "keywords": [
+        "salesforce",
+        "public-sector",
+        "pss",
+        "grantmaking",
+        "grants",
+        "accelerator"
+      ]
+    },
+    {
+      "name": "fi-accelerator-factory",
+      "source": "./plugins/fi-accelerator-factory",
+      "description": "Factory skills for the Salesforce Public Sector Field Inspection Accelerator: turn a public-sector asset-inspection agency's requirements into a tailored extension on one managed base product.",
+      "version": "0.4.0",
+      "author": {
+        "name": "SuccessMetrics"
+      }
+    },
+    {
+      "name": "salesforce-pubsec-delivery",
+      "source": "./plugins/salesforce-pubsec-delivery",
+      "description": "Requirements-to-deployment delivery pipeline for Salesforce Public Sector Solutions. Turns customer requirements into use cases, then a Public-Sector-aware Salesforce design, then runs a closed build-test-fix loop (GitHub + Jira + acceptance-criteria verification) that delegates metadata generation to the official forcedotcom/sf-skills and the dev loop to sf-dev-environment.",
+      "version": "0.3.0",
+      "author": {
+        "name": "Success Metrics"
+      },
+      "keywords": [
+        "salesforce",
+        "public-sector",
+        "requirements",
+        "use-cases",
+        "design",
+        "licensing-permitting-inspections",
+        "grantmaking",
+        "case-management",
+        "field-service",
+        "service-cloud",
+        "experience-cloud"
+      ]
+    },
+    {
+      "name": "sf-dev-environment",
+      "source": "./plugins/sf-dev-environment",
+      "description": "Configure and drive Salesforce, GitHub, and JIRA credentials for agentic dev loops - deploy, fix errors, commit, and update tickets automatically.",
+      "version": "0.2.0",
+      "author": {
+        "name": "Guru"
+      },
+      "keywords": [
+        "salesforce",
+        "github",
+        "jira",
+        "deploy",
+        "devops"
+      ]
+    },
+    {
+      "name": "xls-accelerator-factory",
+      "source": "./plugins/xls-accelerator-factory",
+      "description": "Factory skills for the Excel-to-Salesforce Accelerator: turn a spreadsheet application into a platform application without guessing. Reads the workbook to shape locally (values never leave the machine), classifies what each tab actually is, maps columns to fields with inferred types, decides where every calculation lands (formula field, roll-up, Business Rules Engine decision matrix or expression set, flow, Apex, or a report), names what should stay outside Salesforce, and returns each normalisation as a decision a human signs. Includes generate-implementation, workbook read, design mapping, per-client module scoping, add-on licence detection, incremental delta-add, and a test-first quality gate.",
+      "version": "0.3.0",
+      "author": {
+        "name": "SuccessMetrics"
+      },
+      "keywords": [
+        "salesforce",
+        "excel",
+        "spreadsheet",
+        "migration",
+        "platform",
+        "data-model",
+        "business-rules-engine",
+        "accelerator"
+      ]
+    },
+    {
+      "name": "sc-accelerator-factory",
+      "source": "./plugins/sc-accelerator-factory",
+      "description": "Factory skills for the Service Cloud Accelerator: turn a support organisation's requirements into a tailored, generic Service Cloud implementation \u2014 Case support processes, Entitlements and milestones, Omni-Channel routing, Lightning Knowledge and a self-service Help Center \u2014 without forking the product and without Public Sector Solutions. Assesses an existing org for routing and SLA collisions and retired surfaces, scopes the configuration footprint, detects the add-on licences a scope triggers, gates the build on a support process whose closed statuses close, and adds deltas incrementally. Not public-sector case management.",
+      "version": "0.2.0",
+      "author": {
+        "name": "SuccessMetrics"
+      },
+      "keywords": [
+        "salesforce",
+        "service-cloud",
+        "omni-channel",
+        "entitlements",
+        "knowledge",
+        "help-center",
+        "contact-center",
+        "accelerator"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "sm-delivery",
+  "version": "0.9.0",
+  "description": "SuccessMetrics delivery tooling. Org assessment, scoping, estimating, design review, spreadsheet-to-platform migration, quality gates and finding triage for Salesforce engagements. The judgment runs on sm-agent-core; these skills gather input, call it, and render the result.",
+  "author": {
+    "name": "SuccessMetrics"
+  },
+  "mcpServers": {
+    "sm-agent-core": {
+      "type": "http",
+      "url": "https://agents.successmetrics.io/mcp"
+    }
+  }
+}

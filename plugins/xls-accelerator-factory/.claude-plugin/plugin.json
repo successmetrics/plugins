@@ -1,0 +1,25 @@
+{
+  "name": "xls-accelerator-factory",
+  "version": "0.3.0",
+  "description": "Factory skills for the Excel-to-Salesforce Accelerator: turn a spreadsheet application into a platform application without guessing. Reads the workbook to shape locally (values never leave the machine), classifies what each tab actually is, maps columns to fields with inferred types, decides where every calculation lands (formula field, roll-up, Business Rules Engine decision matrix or expression set, flow, Apex, or a report), names what should stay outside Salesforce, and returns each normalisation as a decision a human signs. Includes generate-implementation, workbook read, design mapping, per-client module scoping, add-on licence detection, incremental delta-add, and a test-first quality gate.",
+  "author": {
+    "name": "SuccessMetrics"
+  },
+  "mcpServers": {
+    "sm-agent-core": {
+      "type": "http",
+      "url": "https://agents.successmetrics.io/mcp"
+    }
+  },
+  "keywords": [
+    "salesforce",
+    "excel",
+    "spreadsheet",
+    "migration",
+    "platform",
+    "data-model",
+    "business-rules-engine",
+    "accelerator"
+  ],
+  "license": "Proprietary"
+}

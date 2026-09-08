@@ -1,0 +1,27 @@
+{
+  "name": "salesforce-pubsec-delivery",
+  "version": "0.3.0",
+  "description": "Requirements-to-deployment delivery pipeline for Salesforce Public Sector Solutions. Turns customer requirements into use cases, then a Public-Sector-aware Salesforce design, then runs a closed build-test-fix loop (GitHub + Jira + acceptance-criteria verification) that delegates metadata generation to the official forcedotcom/sf-skills and the dev loop to sf-dev-environment.",
+  "author": {
+    "name": "Success Metrics"
+  },
+  "mcpServers": {
+    "sm-agent-core": {
+      "type": "http",
+      "url": "https://agents.successmetrics.io/mcp"
+    }
+  },
+  "keywords": [
+    "salesforce",
+    "public-sector",
+    "requirements",
+    "use-cases",
+    "design",
+    "licensing-permitting-inspections",
+    "grantmaking",
+    "case-management",
+    "field-service",
+    "service-cloud",
+    "experience-cloud"
+  ]
+}

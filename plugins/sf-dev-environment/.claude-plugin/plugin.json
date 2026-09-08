@@ -1,0 +1,15 @@
+{
+  "name": "sf-dev-environment",
+  "version": "0.2.0",
+  "description": "Configure and drive Salesforce, GitHub, and JIRA credentials for agentic dev loops - deploy, fix errors, commit, and update tickets automatically.",
+  "author": {
+    "name": "Guru"
+  },
+  "keywords": [
+    "salesforce",
+    "github",
+    "jira",
+    "deploy",
+    "devops"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "lpi-accelerator-factory",
+  "version": "0.7.0",
+  "description": "Factory skills for the Salesforce Public Sector LPI Accelerator: turn customer requirements into a tailored extension on one managed base product with editable unmanaged baseline workflows. Includes generate-implementation, incremental delta-add, an org API-name resolver, per-client module scoping, add-on license detection, a permit-type content library, and a test-first quality gate (lpi-test) asserting must-have basics and running Apex+Jest before deploy.",
+  "author": {
+    "name": "SuccessMetrics"
+  },
+  "mcpServers": {
+    "sm-agent-core": {
+      "type": "http",
+      "url": "https://agents.successmetrics.io/mcp"
+    }
+  },
+  "keywords": [
+    "salesforce",
+    "public-sector",
+    "pss",
+    "licensing",
+    "permitting",
+    "inspections",
+    "accelerator"
+  ],
+  "license": "Proprietary"
+}

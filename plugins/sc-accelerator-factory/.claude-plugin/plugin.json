@@ -1,0 +1,25 @@
+{
+  "name": "sc-accelerator-factory",
+  "version": "0.2.0",
+  "description": "Factory skills for the Service Cloud Accelerator: turn a support organisation's requirements into a tailored, generic Service Cloud implementation \u2014 Case support processes, Entitlements and milestones, Omni-Channel routing, Lightning Knowledge and a self-service Help Center \u2014 without forking the product and without Public Sector Solutions. Assesses an existing org for routing and SLA collisions and retired surfaces, scopes the configuration footprint, detects the add-on licences a scope triggers, gates the build on a support process whose closed statuses close, and adds deltas incrementally. Not public-sector case management.",
+  "author": {
+    "name": "SuccessMetrics"
+  },
+  "mcpServers": {
+    "sm-agent-core": {
+      "type": "http",
+      "url": "https://agents.successmetrics.io/mcp"
+    }
+  },
+  "keywords": [
+    "salesforce",
+    "service-cloud",
+    "omni-channel",
+    "entitlements",
+    "knowledge",
+    "help-center",
+    "contact-center",
+    "accelerator"
+  ],
+  "license": "Proprietary"
+}

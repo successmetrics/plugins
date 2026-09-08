@@ -1,0 +1,15 @@
+{
+  "name": "fi-accelerator-factory",
+  "version": "0.4.0",
+  "description": "Factory skills for the Salesforce Public Sector Field Inspection Accelerator: turn a public-sector asset-inspection agency's requirements into a tailored extension on one managed base product.",
+  "author": {
+    "name": "SuccessMetrics"
+  },
+  "mcpServers": {
+    "sm-agent-core": {
+      "type": "http",
+      "url": "https://agents.successmetrics.io/mcp"
+    }
+  },
+  "license": "Proprietary"
+}

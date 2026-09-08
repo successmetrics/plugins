@@ -1,0 +1,45 @@
+{
+  "generated_by": "sm-agent-core/scripts/sync_marketplace.py",
+  "plugins": [
+    {
+      "name": "sm-delivery",
+      "digest": "324ccc8810bcc5d5",
+      "source_commit": "76bc1f6"
+    },
+    {
+      "name": "lpi-accelerator-factory",
+      "digest": "61b421f6661a2153",
+      "source_commit": "1c8ef09"
+    },
+    {
+      "name": "grant-accelerator-factory",
+      "digest": "06a8fd2e36d2835c",
+      "source_commit": "a349821"
+    },
+    {
+      "name": "fi-accelerator-factory",
+      "digest": "8f5942b7344835dd",
+      "source_commit": "f6acf40"
+    },
+    {
+      "name": "salesforce-pubsec-delivery",
+      "digest": "e49ecebccd13bf4b",
+      "source_commit": "57e6908"
+    },
+    {
+      "name": "sf-dev-environment",
+      "digest": "e0e6e49627c60d3a",
+      "source_commit": "6251a75"
+    },
+    {
+      "name": "xls-accelerator-factory",
+      "digest": "8e7dfa9b9f5b04f7",
+      "source_commit": "d4e20ef"
+    },
+    {
+      "name": "sc-accelerator-factory",
+      "digest": "3a0d64f05fc1c9e5",
+      "source_commit": "54c67ce"
+    }
+  ]
+}
