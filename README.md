@@ -26,6 +26,8 @@ session holding an engagement key, and are not in this repository or
 its history.
 
 No key yet? Request one at <https://agents.successmetrics.io/request-access>.
+Have one? **[GETTING-STARTED.md](GETTING-STARTED.md)** is the whole set-up.
+Local tools (`sm-gates`, `sm-collect`, `sm-workbook`): [tools/](tools/).
 
 | plugin | version | description |
 |---|---|---|

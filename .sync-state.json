@@ -1,5 +1,6 @@
 {
   "generated_by": "sm-agent-core/scripts/sync_marketplace.py",
+  "guide": "docs/getting-started-customer.md",
   "plugins": [
     {
       "name": "sm-delivery",

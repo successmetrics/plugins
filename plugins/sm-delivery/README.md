@@ -61,6 +61,8 @@ Read in this order:
 | `docs/governance.md` | Everyone | The five principles, access rules, versioning, release process |
 | `docs/playbooks.md` | Everyone who edits a skill | Skills are stubs; the procedure is served — where it lives and how to change it (§24) |
 | `docs/provisioning.md` | Core team | Issuing, approving and revoking engagement keys; the `/admin` page |
+| `docs/getting-started-customer.md` | Customers (send it) | Install, connect, use; what each refusal means. Published as `GETTING-STARTED.md` in the public marketplace |
+| `docs/welcome-email.md` | Whoever issues a key | The covering email template — fill, send, nothing else carries the key |
 | `docs/onboarding-offshore.md` | Delivery team | Setup, how to contribute, the G0–G4 gates |
 | `docs/architecture.md` | Engineers | Why the client/server split falls where it does |
 | `docs/auth-roadmap.md` | Core team | Access control stages, key → OAuth path |
