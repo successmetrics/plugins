@@ -30,7 +30,7 @@ export SM_API_KEY='sm_…'         # your engagement key
 cd <your Salesforce project>
 sm-gates run                     # quality gates; exit 0 clean, 1 blocked, 2 could not run
 sm-collect --target-org <alias>  # org inventory for sm_assess_fit (names and counts, never values)
-sm-workbook <file.xlsx>          # workbook shape for the Excel migration line (never cell values)
+sm-workbook --file <book.xlsx>   # workbook shape for the Excel migration line (never cell values)
 ```
 
 ## In GitHub Actions
