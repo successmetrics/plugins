@@ -32,7 +32,7 @@ Local tools (`sm-gates`, `sm-collect`, `sm-workbook`): [tools/](tools/).
 | plugin | version | description |
 |---|---|---|
 | `sm-delivery` | 0.9.0 | SuccessMetrics delivery tooling. |
-| `lpi-accelerator-factory` | 0.7.0 | Factory skills for the Salesforce Public Sector LPI Accelerator: turn customer requirements into a tailored extension on one managed base product with editable unmanaged baseline workflows. |
+| `lpi-accelerator-factory` | 0.7.1 | Factory skills for the Salesforce Public Sector LPI Accelerator: turn customer requirements into a tailored extension on one managed base product with editable unmanaged baseline workflows. |
 | `grant-accelerator-factory` | 0.7.0 | Factory skills for the Salesforce Public Sector Grantmaking Accelerator: turn requirements into a tailored extension on one managed base. |
 | `fi-accelerator-factory` | 0.4.0 | Factory skills for the Salesforce Public Sector Field Inspection Accelerator: turn a public-sector asset-inspection agency's requirements into a tailored extension on one managed base product. |
 | `salesforce-pubsec-delivery` | 0.3.0 | Requirements-to-deployment delivery pipeline for Salesforce Public Sector Solutions. |

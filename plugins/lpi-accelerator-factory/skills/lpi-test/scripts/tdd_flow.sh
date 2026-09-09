@@ -11,6 +11,7 @@
 #   tier   [<client>]                 # 1|2|3 from what the diff touches (docs/38 C5). exit 3 on tier 3
 #   verify <client> [<org>]           # gate -> tier -> verifier-input.json + mrp.md for the INDEPENDENT Verifier
 #   commit <client> "<message>" [org] # stage -> gate -> tier -> mrp checks -> commit -> push (only if all green)
+#   land   <client> <pr|branch> <slug> [REQ…]  # LAND a Lane-B developer PR as a numbered delta: rebase, number, manifest FROM THE DIFF, gate (delivery-lanes doctrine)
 #   status                            # show branch + gate summary
 #
 # Branch convention:  feature/<client>-<slug>   (e.g. feature/<client>-add-explosive-permit)
@@ -289,6 +290,47 @@ case "$cmd" in
     echo "== 5/5 push (no force) =="
     git -C "$ROOT" push -u origin "$branch"
     echo "✓ pushed $branch. Open the PR with $mrp as the body — traceability: contract + code + gate + MRP are in the commit."
+    ;;
+  land)
+    # Delivery-lanes doctrine (pss-platform/platform/doctrine/delivery-lanes.md): a Lane-B developer
+    # (no toolkit) opened a PR from their own sandbox. Land it as a numbered delta — number, manifest
+    # FROM THE DIFF, gate — then the hand steps the doctrine keeps human. Never merges, never deploys.
+    client="${1:?usage: tdd_flow.sh land <client> <pr-number|branch> <slug> [REQ-… ...]}"
+    ref="${2:?pr number or branch required}"; slug="${3:?slug required}"; shift 3 || true; reqs="$*"
+    eng="$ROOT/engagements/$client"; [ -d "$eng" ] || { echo "✗ no engagements/$client" >&2; exit 1; }
+    git -C "$ROOT" fetch -q origin
+    if [[ "$ref" =~ ^[0-9]+$ ]]; then
+      command -v gh >/dev/null || { echo "✗ gh CLI required for a PR number" >&2; exit 1; }
+      (cd "$ROOT" && gh pr checkout -q "$ref"); pr="PR #$ref"
+    else
+      git -C "$ROOT" checkout -q "$ref"; pr="branch $ref"
+    fi
+    branch="$(git -C "$ROOT" rev-parse --abbrev-ref HEAD)"
+    git -C "$ROOT" rebase -q "origin/$(default_branch)" || { echo "✗ rebase conflicts — resolve, re-run" >&2; exit 1; }
+    mkdir -p "$eng/package" "$eng/docs"
+    last=$( { grep -oE '^\| [0-9]{2}' "$eng/docs/delta-log.md" 2>/dev/null | tr -d '| ' || true;
+              ls "$eng/package" 2>/dev/null | grep -oE '^delta-[0-9]{2}' | cut -d- -f2 || true; } | sort -n | tail -1 )
+    next=$(printf '%02d' $(( 10#${last:-0} + 1 )))
+    manifest="engagements/$client/package/delta-${next}-${slug}.xml"
+    python3 "$ROOT/product/pipeline/manifest_from_diff.py" --base "origin/$(default_branch)" --head HEAD \
+      --ext "engagements/$client/ext/force-app/main/default/" --site "engagements/$client/site/" \
+      --out "$ROOT/$manifest" \
+      --comment "Delta ${next}: ${slug} (landed from ${pr}). Requirements: ${reqs:-<cite REQ ids>}. Scoped and ADDITIVE."
+    git -C "$ROOT" add "$manifest"
+    echo "▶ paths changed outside engagements/$client/{ext,site} (must be none, or reviewed):"
+    git -C "$ROOT" diff --name-only "origin/$(default_branch)"...HEAD | grep -vE "^engagements/$client/(ext|site)/" | sed 's/^/   /' || true
+    echo "▶ gate"
+    run_gate "$client" "" || { echo "✗ gate BLOCKED — fix on this branch (or comment on the PR) before landing" >&2; exit 1; }
+    cat <<EOF2
+
+✓ delta ${next} reserved for ${pr} on ${branch}; manifest ${manifest}
+Still by hand (doctrine, not script):
+  1. regenerate anything the developer hand-edited (record pages, checklists, related lists, portal views) from design/
+  2. deploy the manifest to YOUR sandbox and verify the ticket's acceptance criteria there (their PR text is a claim)
+  3. delta-log row in engagements/$client/docs/delta-log.md citing REQ/UC ids — mark "${pr}" and "developer: <login>"
+  4. requirements status + traceability;  then: tdd_flow.sh verify $client [org]  →  tdd_flow.sh commit $client "delta ${next}: ${slug} (lands ${pr})"
+  5. squash-merge, deploy \`main\` to the shared org, close the ticket with the delta number + deploy id
+EOF2
     ;;
   status)
     echo "branch: $(git -C "$ROOT" rev-parse --abbrev-ref HEAD)"

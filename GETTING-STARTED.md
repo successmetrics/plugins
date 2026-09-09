@@ -117,6 +117,31 @@ else.
 
 ---
 
+## 3b. People on the engagement who do not have the plugin
+
+Not everyone needs a key. A developer or tester who has a Salesforce sandbox,
+the `sf` CLI, Git and access to the engagement repository works in the
+**developer lane**: their whole process is the one-page
+`docs/DEVELOPER_QUICKSTART.md` in the engagement repo — own sandbox, one
+ticket = one branch = one pull request, build in Setup, retrieve the named
+metadata into the branch, open the PR with three lines (what changed, how it
+was tested in the sandbox, ticket number). They never write a manifest, run a
+gate or touch a generated file.
+
+A plugin holder then **lands** that PR (`scripts/land_pr.sh` in the engagement
+repo, or the add-delta skill's landing entry): delta number, manifest built
+from the diff, gates, verification of the ticket's acceptance criteria in a
+sandbox the developer did not use, delta-log row, merge, deploy. The landed PR
+is a delta like any other.
+
+Two rules keep the lanes honest: nobody builds in the shared integration org
+(it runs `main`, deployed by a plugin holder), and a developer PR is never
+merged as is. Anyone who ends up doing more than a handful of tickets should
+be given a key and the plugin — ask us; the developer lane is how people
+start, not where they stay.
+
+---
+
 ## 4. When something refuses
 
 | You see | It means | Do |

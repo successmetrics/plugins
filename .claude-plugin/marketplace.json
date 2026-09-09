@@ -22,7 +22,7 @@
       "name": "lpi-accelerator-factory",
       "source": "./plugins/lpi-accelerator-factory",
       "description": "Factory skills for the Salesforce Public Sector LPI Accelerator: turn customer requirements into a tailored extension on one managed base product with editable unmanaged baseline workflows. Includes generate-implementation, incremental delta-add, an org API-name resolver, per-client module scoping, add-on license detection, a permit-type content library, and a test-first quality gate (lpi-test) asserting must-have basics and running Apex+Jest before deploy.",
-      "version": "0.7.0",
+      "version": "0.7.1",
       "author": {
         "name": "SuccessMetrics"
       },
