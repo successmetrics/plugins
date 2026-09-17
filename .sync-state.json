@@ -4,23 +4,23 @@
   "plugins": [
     {
       "name": "sm-delivery",
-      "digest": "06cbdacc4a29c472",
-      "source_commit": "2248ef0"
+      "digest": "6061cb94e80aa53c",
+      "source_commit": "aeac182"
     },
     {
       "name": "lpi-accelerator-factory",
-      "digest": "c6ceef550a78b180",
-      "source_commit": "3536e49"
+      "digest": "5a18fbc0d8a9b929",
+      "source_commit": "3a86e00"
     },
     {
       "name": "grant-accelerator-factory",
-      "digest": "eb2807334878a262",
-      "source_commit": "f8e1792"
+      "digest": "8431e858e43af377",
+      "source_commit": "98acfea"
     },
     {
       "name": "fi-accelerator-factory",
-      "digest": "2fba3a4df9b7425f",
-      "source_commit": "cf02f48"
+      "digest": "130dcf81aed36f69",
+      "source_commit": "c215299"
     },
     {
       "name": "salesforce-pubsec-delivery",
@@ -29,18 +29,18 @@
     },
     {
       "name": "sf-dev-environment",
-      "digest": "988b56264aacbaf5",
-      "source_commit": "1bebf43"
+      "digest": "cd02ca3818e7d3a2",
+      "source_commit": "448c61f"
     },
     {
       "name": "xls-accelerator-factory",
-      "digest": "7b13005d7f938769",
-      "source_commit": "275304d"
+      "digest": "da983c54213cd372",
+      "source_commit": "76a0416"
     },
     {
       "name": "sc-accelerator-factory",
-      "digest": "9ea8f04a5e61c07a",
-      "source_commit": "54bb83e"
+      "digest": "63ad80c1ffaf2d9b",
+      "source_commit": "ab05d97"
     }
   ]
 }

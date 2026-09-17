@@ -1,6 +1,6 @@
 ---
 name: dev-deploy-loop
-description: Run the full agentic Salesforce development loop: deploy metadata to the org, read the deploy errors, fix, redeploy, commit to GitHub, update JIRA. Use for "deploy to Salesforce", "run the deploy loop", "deploy my changes", "push to SF", "deploy and fix errors", "deploy and check in", or a pre-deploy check of a Salesforce release (org deploy, tests, packaging). Reads credentials from the saved config file. A release that is not a Salesforce org deploy belongs to the generic engineering deploy-checklist skill.
+description: "Run the full agentic Salesforce development loop: deploy metadata to the org, read the deploy errors, fix, redeploy, commit to GitHub, update JIRA. Use for 'deploy to Salesforce', 'run the deploy loop', 'deploy my changes', 'push to SF', 'deploy and fix errors', 'deploy and check in', or a pre-deploy check of a Salesforce release (org deploy, tests, packaging). Reads credentials from the saved config file. A release that is not a Salesforce org deploy belongs to the generic engineering deploy-checklist skill."
 ---
 <!-- served-playbook -->
 # dev-deploy-loop
