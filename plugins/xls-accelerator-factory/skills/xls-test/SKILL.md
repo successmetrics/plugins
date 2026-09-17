@@ -1,6 +1,6 @@
 ---
 name: xls-test
-description: "Test-first quality gate for a spreadsheet-migration engagement. Asserts the things that go wrong in THIS line specifically — a derived value stored as data, a rate left as a literal in a formula, an aggregate carried without its provenance, a period ladder stored instead of generated, an object with no list view replacing a tab people used to click — plus the standard basics and the Apex and Jest suites. Use when the user says 'run the tests', 'gate the deploy', 'check the basics', 'is the build green', or before ANY deploy or xls-add-delta."
+description: "Test-first quality gate for a spreadsheet-migration engagement. Asserts the things that go wrong in THIS line specifically — a derived value stored as data, a rate left as a literal in a formula, an aggregate carried without its provenance, a period ladder stored instead of generated, an object with no list view replacing a tab people used to click — plus the standard basics and the Apex and Jest suites. Use when the user says 'run the tests', 'gate the deploy', 'check the basics', 'is the build green', or before ANY deploy or xls-add-delta. Also answers "what tests does this engagement need" and "test plan for this build" for a SALESFORCE build specifically — persona and channel contexts, flow branch and fault paths, refusal paths, money invariants, portal run-as. A testing strategy for anything that is not a Salesforce build belongs to the generic engineering testing-strategy skill."
 ---
 <!-- served-playbook -->
 # xls-test

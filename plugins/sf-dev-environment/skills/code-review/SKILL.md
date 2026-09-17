@@ -1,6 +1,6 @@
 ---
 name: code-review
-description: Review staged or changed files against loaded coding rules and Salesforce best practices before committing or deploying. Use when the user says "review my changes", "check my code", "review before commit", "audit my code", "check for issues", "review staged files", "run a code review", "check code quality", "look for problems in my changes", "review this PR", or "check my code against the rules". Modelled on Augment's automated code review capability.
+description: Review changed SALESFORCE source — Apex, LWC, flows, validation rules, permission sets and profiles, page layouts, packaging — against the loaded coding rules before a deploy or a commit. Checks what a generic reviewer cannot see: field-level security and persona access, sharing and record visibility, governor limits and bulkification, SOQL in loops, test-context gaps, managed-package and namespace rules. Use for "review my Salesforce changes", "review this metadata", "check my Apex", "review staged files before I deploy", "check my code against the rules", "will this break FLS or sharing". For code that is not Salesforce, the generic engineering code-review skill applies instead.
 ---
 <!-- served-playbook -->
 # code-review

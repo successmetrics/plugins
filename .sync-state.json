@@ -5,17 +5,17 @@
     {
       "name": "sm-delivery",
       "digest": "06cbdacc4a29c472",
-      "source_commit": "361420e"
+      "source_commit": "2248ef0"
     },
     {
       "name": "lpi-accelerator-factory",
-      "digest": "c4c93b9e4a7f1bee",
-      "source_commit": "4b8a628"
+      "digest": "c6ceef550a78b180",
+      "source_commit": "3536e49"
     },
     {
       "name": "grant-accelerator-factory",
-      "digest": "06a8fd2e36d2835c",
-      "source_commit": "a349821"
+      "digest": "eb2807334878a262",
+      "source_commit": "f8e1792"
     },
     {
       "name": "fi-accelerator-factory",
@@ -29,18 +29,18 @@
     },
     {
       "name": "sf-dev-environment",
-      "digest": "e0e6e49627c60d3a",
-      "source_commit": "6251a75"
+      "digest": "988b56264aacbaf5",
+      "source_commit": "1bebf43"
     },
     {
       "name": "xls-accelerator-factory",
-      "digest": "8e7dfa9b9f5b04f7",
-      "source_commit": "d4e20ef"
+      "digest": "7b13005d7f938769",
+      "source_commit": "275304d"
     },
     {
       "name": "sc-accelerator-factory",
-      "digest": "3a0d64f05fc1c9e5",
-      "source_commit": "54c67ce"
+      "digest": "9ea8f04a5e61c07a",
+      "source_commit": "54bb83e"
     }
   ]
 }
