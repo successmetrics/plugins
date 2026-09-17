@@ -31,14 +31,14 @@ Local tools (`sm-gates`, `sm-collect`, `sm-workbook`): [tools/](tools/).
 
 | plugin | version | description |
 |---|---|---|
-| `sm-delivery` | 0.9.0 | SuccessMetrics delivery tooling. |
-| `lpi-accelerator-factory` | 0.7.1 | Factory skills for the Salesforce Public Sector LPI Accelerator: turn customer requirements into a tailored extension on one managed base product with editable unmanaged baseline workflows. |
-| `grant-accelerator-factory` | 0.7.0 | Factory skills for the Salesforce Public Sector Grantmaking Accelerator: turn requirements into a tailored extension on one managed base. |
-| `fi-accelerator-factory` | 0.4.0 | Factory skills for the Salesforce Public Sector Field Inspection Accelerator: turn a public-sector asset-inspection agency's requirements into a tailored extension on one managed base product. |
+| `sm-delivery` | 0.9.1 | SuccessMetrics delivery tooling. |
+| `lpi-accelerator-factory` | 0.7.2 | Factory skills for the Salesforce Public Sector LPI Accelerator: turn customer requirements into a tailored extension on one managed base product with editable unmanaged baseline workflows. |
+| `grant-accelerator-factory` | 0.7.1 | Factory skills for the Salesforce Public Sector Grantmaking Accelerator: turn requirements into a tailored extension on one managed base. |
+| `fi-accelerator-factory` | 0.4.1 | Factory skills for the Salesforce Public Sector Field Inspection Accelerator: turn a public-sector asset-inspection agency's requirements into a tailored extension on one managed base product. |
 | `salesforce-pubsec-delivery` | 0.3.0 | Requirements-to-deployment delivery pipeline for Salesforce Public Sector Solutions. |
-| `sf-dev-environment` | 0.2.0 | Configure and drive Salesforce, GitHub, and JIRA credentials for agentic dev loops - deploy, fix errors, commit, and update tickets automatically. |
-| `xls-accelerator-factory` | 0.3.0 | Factory skills for the Excel-to-Salesforce Accelerator: turn a spreadsheet application into a platform application without guessing. |
-| `sc-accelerator-factory` | 0.2.0 | Factory skills for the Service Cloud Accelerator: turn a support organisation's requirements into a tailored, generic Service Cloud implementation — Case support processes, Entitlements and milestones, Omni-Channel routing, Lightning Knowledge and a self-service Help Center — without forking the product and without Public Sector Solutions. |
+| `sf-dev-environment` | 0.2.1 | Configure and drive Salesforce, GitHub, and JIRA credentials for agentic dev loops - deploy, fix errors, commit, and update tickets automatically. |
+| `xls-accelerator-factory` | 0.3.1 | Factory skills for the Excel-to-Salesforce Accelerator: turn a spreadsheet application into a platform application without guessing. |
+| `sc-accelerator-factory` | 0.2.1 | Factory skills for the Service Cloud Accelerator: turn a support organisation's requirements into a tailored, generic Service Cloud implementation — Case support processes, Entitlements and milestones, Omni-Channel routing, Lightning Knowledge and a self-service Help Center — without forking the product and without Public Sector Solutions. |
 
 The judgment runs on the service; these skills gather input, call it and
 render the result.

@@ -1,6 +1,6 @@
 {
   "name": "grant-accelerator-factory",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Factory skills for the Salesforce Public Sector Grantmaking Accelerator: turn requirements into a tailored extension on one managed base. Includes generate-implementation (fit-and-finish, DocGen, portal, library-match), an org API-name resolver (catches missing Grantmaking/CDS), module scoping, license detection, grant-add-delta for additive changes, and grant-test \u2014 a contract-driven test-first quality gate.",
   "author": {
     "name": "SuccessMetrics"
