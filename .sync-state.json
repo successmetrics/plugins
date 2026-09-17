@@ -19,8 +19,8 @@
     },
     {
       "name": "fi-accelerator-factory",
-      "digest": "8f5942b7344835dd",
-      "source_commit": "f6acf40"
+      "digest": "2fba3a4df9b7425f",
+      "source_commit": "cf02f48"
     },
     {
       "name": "salesforce-pubsec-delivery",

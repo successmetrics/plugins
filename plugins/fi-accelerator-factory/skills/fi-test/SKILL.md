@@ -1,6 +1,6 @@
 ---
 name: fi-test
-description: "Test-first quality gate for the Field Inspection accelerator. Asserts the basics that must ALWAYS be present — All list views, detail-page FLS, persona object/class/tab access — plus Apex/Jest, as ONE gate that blocks build/deploy on critical failures. Use when the user says 'run the tests', 'test-first', 'gate the deploy', 'check the basics', 'is the FI build green', or before ANY FI deploy or fi-add-delta. Contract-driven: extend per customer via engagements/CLIENT/design/test-contract.yaml, never by editing the product baseline."
+description: "Test-first quality gate for the Field Inspection accelerator. Asserts the basics that must ALWAYS be present — All list views, detail-page FLS, persona object/class/tab access — plus Apex/Jest, as ONE gate that blocks build/deploy on critical failures. Use when the user says 'run the tests', 'test-first', 'gate the deploy', 'check the basics', 'is the FI build green', or before ANY FI deploy or fi-add-delta. Contract-driven: extend per customer via engagements/CLIENT/design/test-contract.yaml, never by editing the product baseline. Also answers "what tests does this engagement need" and "test plan for this build" for a SALESFORCE build specifically — persona and channel contexts, flow branch and fault paths, refusal paths, money invariants, portal run-as. A testing strategy for anything that is not a Salesforce build belongs to the generic engineering testing-strategy skill."
 ---
 <!-- served-playbook -->
 # fi-test
