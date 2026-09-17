@@ -1,6 +1,6 @@
 ---
 name: sm-estimate
-description: "Build a Salesforce project estimate — a Basis of Estimate (BOE) of effort per item, then a Level of Effort (LOE) timeline with phases, staffed team and cost. Use when the user asks to 'estimate', 'build an LOE', 'BOE', 'level of effort', 'staffing plan', 'project duration', 'how many sprints', 'how many hours', 'price a project', or wants a delivery timeline and team for a Salesforce/PSS implementation. Produces a four-tab Excel."
+description: "Build a Salesforce project estimate — a Basis of Estimate (BOE) of effort per item, then a Level of Effort (LOE) timeline with phases, staffed team and cost. Use when the user asks to 'estimate', 'build an LOE', 'BOE', 'level of effort', 'staffing plan', 'project duration', 'how many sprints', 'how many hours', 'price a project', or wants a delivery timeline and team for a Salesforce/PSS implementation. Also the discovery set to ask BEFORE estimating — 'what should we ask before we estimate', 'discovery questions', 'what drives the estimate', 'why is it this many hours', 'explain the estimate to the customer'. Produces a four-tab Excel."
 ---
 <!-- served-playbook -->
 # sm-estimate
