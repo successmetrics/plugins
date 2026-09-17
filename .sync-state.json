@@ -29,8 +29,8 @@
     },
     {
       "name": "sf-dev-environment",
-      "digest": "cd02ca3818e7d3a2",
-      "source_commit": "448c61f"
+      "digest": "aede08bfd929c4c0",
+      "source_commit": "2eb74c2"
     },
     {
       "name": "xls-accelerator-factory",

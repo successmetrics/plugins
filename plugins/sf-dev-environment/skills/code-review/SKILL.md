@@ -1,6 +1,6 @@
 ---
 name: code-review
-description: "Review changed SALESFORCE source — Apex, LWC, flows, validation rules, permission sets and profiles, page layouts, packaging — against the loaded coding rules before a deploy or a commit. Checks what a generic reviewer cannot see: field-level security and persona access, sharing and record visibility, governor limits and bulkification, SOQL in loops, test-context gaps, managed-package and namespace rules. Use for 'review my Salesforce changes', 'review this metadata', 'check my Apex', 'review staged files before I deploy', 'check my code against the rules', 'will this break FLS or sharing'. For code that is not Salesforce, the generic engineering code-review skill applies instead."
+description: "Review changed SALESFORCE source — Apex, LWC, flows, validation rules, permission sets and profiles, page layouts, packaging — against the loaded coding rules before a deploy or a commit. Checks what a generic reviewer cannot see: field-level security and persona access, sharing and record visibility, governor limits and bulkification, SOQL in loops, test-context gaps, managed-package and namespace rules. Use for 'review my Salesforce changes', 'review this metadata', 'check my Apex', 'review staged files before I deploy', 'check my Apex against our Salesforce rules', 'will this break FLS or sharing'. For code that is not Salesforce, the generic engineering code-review skill applies instead."
 ---
 <!-- served-playbook -->
 # code-review
