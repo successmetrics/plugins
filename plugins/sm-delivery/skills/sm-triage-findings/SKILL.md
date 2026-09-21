@@ -16,3 +16,5 @@ is not yet authorized. Open Settings → Plugins, pick **Sm delivery**, open its
 Connectors tab, connect `sm-agent-core` with your engagement key, and begin a new
 session so the tool list refreshes. Never proceed from memory or from an older
 copy of this skill.
+
+Scripts the playbook names live in this skill's `scripts/` directory.

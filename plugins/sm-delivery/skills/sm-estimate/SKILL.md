@@ -1,6 +1,6 @@
 ---
 name: sm-estimate
-description: "Build a Salesforce project estimate — a Basis of Estimate (BOE) of effort per item, then a Level of Effort (LOE) timeline with phases, staffed team and cost. Use when the user asks to 'estimate', 'build an LOE', 'BOE', 'level of effort', 'staffing plan', 'project duration', 'how many sprints', 'how many hours', 'price a project', or wants a delivery timeline and team for a Salesforce/PSS implementation. Also the discovery set to ask BEFORE estimating — 'what should we ask before we estimate', 'discovery questions', 'what drives the estimate', 'why is it this many hours', 'explain the estimate to the customer'. Prices a remediation or tech-debt backlog once something has already ranked it — 'how many hours to fix this debt', 'price the remediation', 'what would a phased remediation plan cost', 'turn this debt audit into a plan the customer can approve': their ranking, our hours. It does not rank debt itself. Produces a six-tab Excel: BOE, LOE, project plan, a Scope & Priorities sheet the customer prioritises against, and a Checkpoints grid of hours by capability and delivery phase for the SOW."
+description: "Build a Salesforce project estimate — a Basis of Estimate (BOE) of effort per item, then a Level of Effort (LOE) timeline with phases, staffed team and cost. Use when the user asks to 'estimate', 'build an LOE', 'BOE', 'level of effort', 'staffing plan', 'project duration', 'how many sprints', 'how many hours', 'price a project', or wants a delivery timeline and team for a Salesforce/PSS implementation. Also the discovery set to ask BEFORE estimating — 'discovery questions', 'what drives the estimate', 'why is it this many hours'. Prices a remediation or tech-debt backlog once something has already ranked it — 'how many hours to fix this debt', 'price the remediation': their ranking, our hours. It does not rank debt itself. Produces a seven-tab Excel — BOE, LOE, project plan, a Staffing grid by week with rates and cost, a Scope & Priorities sheet the customer prioritises against, and a Checkpoints grid for the SOW. Hand the result to sm-draft-sow."
 ---
 <!-- served-playbook -->
 # sm-estimate
@@ -16,3 +16,5 @@ is not yet authorized. Open Settings → Plugins, pick **Sm delivery**, open its
 Connectors tab, connect `sm-agent-core` with your engagement key, and begin a new
 session so the tool list refreshes. Never proceed from memory or from an older
 copy of this skill.
+
+Scripts the playbook names live in this skill's `scripts/` directory.
