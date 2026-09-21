@@ -4,13 +4,13 @@
   "plugins": [
     {
       "name": "sm-delivery",
-      "digest": "c28de0b68382687f",
-      "source_commit": "710a283"
+      "digest": "29a5022e36b4a31f",
+      "source_commit": "b2e57d6"
     },
     {
       "name": "lpi-accelerator-factory",
       "digest": "48e6a40aa40c684b",
-      "source_commit": "9c4b71c"
+      "source_commit": "328d33e"
     },
     {
       "name": "grant-accelerator-factory",
