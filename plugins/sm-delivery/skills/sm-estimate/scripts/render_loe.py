@@ -298,6 +298,31 @@ def _checkpoints_tab(wb: Workbook, exp: dict) -> None:
     ws.freeze_panes = ws.cell(row=HEAD_ROW + 1, column=2)
 
 
+
+def _merge_assignments(team, weeks):
+    """One row per NAMED RESOURCE, carrying its hours week by week.
+
+    `sm_estimate` returns an assignment per contiguous run at one allocation, so an
+    architect who is half time in planning, full time in design and half time again
+    through the build is three entries. That is right for the model and wrong for the
+    sheet: a reader counting rows counts people, and three rows says three architects.
+    """
+    out, seen = [], {}
+    for m in team:
+        key = (m["label"], m.get("location", ""), m.get("rate"))
+        row = seen.get(key)
+        if row is None:
+            row = dict(m, weekly=[0.0] * weeks)
+            seen[key] = row
+            out.append(row)
+        for w in range(m["start_week"], min(m["end_week"], weeks) + 1):
+            row["weekly"][w - 1] += m["hours_per_week"]
+    for row in out:
+        on = [i + 1 for i, h in enumerate(row["weekly"]) if h]
+        row["start_week"], row["end_week"] = (on[0], on[-1]) if on else (1, 0)
+    return out
+
+
 def _staffing_tab(wb: Workbook, est: dict, start_date=None) -> None:
     """The staffing sheet the firm actually hands over, in its own layout.
 
@@ -377,10 +402,10 @@ def _staffing_tab(wb: Workbook, est: dict, start_date=None) -> None:
             c.font, c.number_format = REG, USD
             for w in range(1, weeks + 1):
                 col = FIRST + w - 1
-                inside = m["start_week"] <= w <= m["end_week"]
-                c = ws.cell(row, col, m["hours_per_week"] if inside else None)
+                hrs = m["weekly"][w - 1] if w - 1 < len(m["weekly"]) else 0.0
+                c = ws.cell(row, col, hrs or None)
                 c.font, c.alignment, c.border, c.number_format = SMALL, CEN, BORD, H1
-                if inside:
+                if hrs:
                     c.fill = PatternFill(
                         "solid", fgColor=_STAFF_BAND.get(_phase(w), "FFFFFF"))
             a, b = get_column_letter(FIRST), get_column_letter(FIRST + weeks - 1)
@@ -400,8 +425,9 @@ def _staffing_tab(wb: Workbook, est: dict, start_date=None) -> None:
             row += 1
         return row + 1
 
-    impl = [m for m in est["team"] if str(m.get("category", "")) != "support"]
-    support = [m for m in est["team"] if str(m.get("category", "")) == "support"]
+    merged = _merge_assignments(est["team"], weeks)
+    impl = [m for m in merged if str(m.get("category", "")) != "support"]
+    support = [m for m in merged if str(m.get("category", "")) == "support"]
     nxt = _block("Implementation", impl, 6)
     if support:
         _block("Support", support, nxt)

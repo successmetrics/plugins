@@ -13,7 +13,7 @@
       "name": "sm-delivery",
       "source": "./plugins/sm-delivery",
       "description": "SuccessMetrics delivery tooling. Org assessment, scoping, estimating, SOW drafting, design review, spreadsheet-to-platform migration, quality gates and finding triage for Salesforce engagements. The judgment runs on sm-agent-core; these skills gather input, call it, and render the result.",
-      "version": "0.12.0",
+      "version": "0.13.0",
       "author": {
         "name": "SuccessMetrics"
       }

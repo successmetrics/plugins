@@ -67,6 +67,31 @@ def check(eng: dict) -> None:
                 raise SystemExit(f"engagement.json releases[{i}] is missing: {k}")
 
 
+
+def merge_assignments(team, weeks):
+    """One row per NAMED RESOURCE, carrying its hours week by week.
+
+    `sm_estimate` returns an assignment per contiguous run at one allocation, so an
+    architect who is half time in planning, full time in design and half time again
+    through the build is three entries. That is right for the model and wrong for the
+    page: a reader counting rows counts people, and three rows says three architects.
+    """
+    out, seen = [], {}
+    for m in team:
+        key = (m["label"], m.get("location", ""), m.get("rate"))
+        row = seen.get(key)
+        if row is None:
+            row = dict(m, weekly=[0.0] * weeks)
+            seen[key] = row
+            out.append(row)
+        for w in range(m["start_week"], min(m["end_week"], weeks) + 1):
+            row["weekly"][w - 1] += m["hours_per_week"]
+    for row in out:
+        on = [i + 1 for i, h in enumerate(row["weekly"]) if h]
+        row["start_week"], row["end_week"] = (on[0], on[-1]) if on else (1, 0)
+    return out
+
+
 class Sow:
     def __init__(self, eng, exp, est):
         self.eng, self.exp, self.est = eng, exp, est
@@ -252,7 +277,7 @@ class Sow:
                "that resource's hours for that week; the phase band and sprint number "
                "run across the top.")
         weeks = est["total_weeks"]
-        team = est["team"]
+        team = merge_assignments(est["team"], weeks)
         start = self.eng.get("start_date")
         start = date(*(int(x) for x in start.split("-"))) if start else None
 
@@ -317,10 +342,10 @@ class Sow:
             cell(row[1], self.eng.get("rates", {}).get(m["label"], "[rate]"), size=5)
             total = 0.0
             for w in range(1, weeks + 1):
-                on = m["start_week"] <= w <= m["end_week"]
-                if on:
-                    total += m["hours_per_week"]
-                    cell(row[1 + w], f"{m['hours_per_week']:.0f}", size=5,
+                hrs = m["weekly"][w - 1]
+                if hrs:
+                    total += hrs
+                    cell(row[1 + w], f"{hrs:.0f}", size=5,
                          fill=BAND.get(self.phase_at(w), "FFFFFF"))
                 else:
                     cell(row[1 + w], "")
