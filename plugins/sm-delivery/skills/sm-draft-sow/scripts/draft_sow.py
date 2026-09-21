@@ -365,14 +365,20 @@ class Sow:
         if not base:
             return
         slack = staffed - base
-        pct = slack / base
-        self.p(f"The grid assigns {staffed:,.0f} hours of capacity against the "
-               f"{base:,.1f} priced hours in Section 5.1, a difference of "
-               f"{slack:+,.0f} hours ({pct:+.1%}). Capacity is booked to whole sprints "
-               "and whole phase bands, so a team is on the plan for the sprint it is "
-               "needed in rather than for the exact hours inside it. The fee follows "
-               "the priced hours, not the grid: hours assigned and not worked are not "
-               "charged.", italic=True, size=9)
+        priced_ceremony = float(self.exp.get("totals", {}).get("sprint_ceremony") or 0)
+        lead = ("Every resource above is shown at the hours they are assigned: a full-time "
+                "resource at a full week for the weeks the work needs, a lead at the "
+                "allocation they hold across the engagement. ")
+        if priced_ceremony:
+            lead += (f"That includes the {priced_ceremony:,.0f} hours of sprint ceremony, "
+                     "refinement and review priced in Section 5.1 — the part of a delivery "
+                     "week that is not build work. ")
+        self.p(lead + f"The grid assigns {staffed:,.0f} hours against the {base:,.1f} priced "
+               f"hours, a difference of {slack:+,.0f} ({slack / base:+.1%}): a team is on the "
+               "plan for whole weeks and whole sprints rather than for the exact hours inside "
+               "them. The fee follows hours actually worked at the Section 5.2 rates, subject "
+               "to the Not-to-Exceed amount; hours assigned and not worked are not charged.",
+               italic=True, size=9)
 
     def checkpoints(self):
         """Hours per checkpoint, crossed from the BOE rather than typed in."""
@@ -577,14 +583,22 @@ def main(argv):
               "derived from the same BOE lines, so this means the release map in "
               "engagement.json does not cover every capability.")
     staffed = getattr(sow, "grand_staffed", 0.0)
+    ceremony = float(exp.get("totals", {}).get("sprint_ceremony") or 0)
     slack = (staffed - base) / base if base else 0.0
-    print(f"  staffed hours    {staffed:,.0f} h ({slack:+.1%} vs the fee basis — "
-          "sprint-boundary capacity, reconciled in Section 3.2)")
-    if base and abs(slack) > 0.15:
-        print("  WARNING: the staffing grid and the fee basis differ by more than sprint "
-              "rounding explains. Check sm_estimate's reconciliation warnings — a role "
-              "staffed independently of its BOE category, or a team size that does not "
-              "match the effort, will show up here first.")
+    print(f"  staffed hours    {staffed:,.0f} h ({slack:+.1%} vs the fee basis)")
+    if ceremony:
+        print(f"  of the basis     {ceremony:,.0f} h is sprint ceremony, priced in the BOE")
+    elif est.get("sprint_ceremony_hours"):
+        print(f"  NOT PRICED       {est['sprint_ceremony_hours']:,.0f} h of sprint ceremony is "
+              "in the grid and not in the BOE. Re-expand: sm_boe_expand prices it now, and "
+              "until it does the NTE is short by that much.")
+    # The guard is on the UNEXPLAINED part. Whole weeks and whole sprints round up, so a few
+    # percent is expected; past 10% something is staffed from outside its BOE category.
+    if abs(slack) > 0.10:
+        print("  WARNING: the staffing grid and the fee basis differ by more than whole-week "
+              "and whole-sprint rounding explain. Check sm_estimate's reconciliation warnings "
+              "— a role staffed independently of its BOE category, or a team size that does "
+              "not match the effort, will show up here first.")
     return 0
 
 
