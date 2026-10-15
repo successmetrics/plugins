@@ -1,6 +1,8 @@
 ---
 name: fi-license-check
 description: "Detect the Salesforce add-on LICENSE dependencies a Field Inspection engagement's scope triggers (PSF-A-FS Field App / Axsy / Mobile App Plus briefcase for mobility+dispatch tiers, Salesforce Maps, ArcGIS estate, Experience Cloud, DocGen, Shield, identity/SSO) and call them out in the design. Use when analyzing requirements, 'what licenses do we need', 'license dependencies', 'do we need Field Service or Maps', or before pricing/deploying an engagement."
+playbook_version: "1.0.0"
+playbook_digest: "ef52964c59d39441"
 ---
 <!-- served-playbook -->
 # fi-license-check

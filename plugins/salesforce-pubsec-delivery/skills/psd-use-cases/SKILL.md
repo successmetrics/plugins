@@ -1,6 +1,8 @@
 ---
 name: psd-use-cases
 description: "Turn structured Salesforce Public Sector requirements into detailed use cases with personas, main and alternate flows, and Gherkin acceptance criteria. Use after requirements exist (.sfdesign/requirements.yaml) and the user wants use cases, user stories, personas, acceptance criteria, or 'turn requirements into use cases' for a PSS engagement (Licensing/Permitting/Inspections, Complex Case Management, Grantmaking, Field Service, Service Cloud, Experience Cloud). Second stage of the salesforce-pubsec-delivery pipeline; writes .sfdesign/use-cases.yaml."
+playbook_version: "1.2.0"
+playbook_digest: "b5073f71dd3474b1"
 ---
 <!-- served-playbook -->
 # psd-use-cases

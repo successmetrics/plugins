@@ -1,6 +1,8 @@
 ---
 name: check-config
 description: Display and update saved Salesforce, GitHub, and JIRA credentials for the sf-dev-environment plugin. Use when the user says "check my config", "show my credentials", "what org am I using", "show dev environment settings", "what GitHub repo is configured", "check JIRA settings", "update my org alias", "change my GitHub token", or "show environment config".
+playbook_version: "1.0.0"
+playbook_digest: "4343e62848699a27"
 ---
 <!-- served-playbook -->
 # check-config

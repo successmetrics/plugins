@@ -1,6 +1,8 @@
 ---
 name: sc-add-delta
-description: "Add a single delta — a new Case record type or support process, a queue or skill, an entitlement process version, a knowledge data category, a macro set, a report, a Help Center page — to an ALREADY-generated Service Cloud engagement without re-running sc-generate-implementation. Use when the user says 'add a queue to the client', 'new support process', 'version the Gold entitlement', 'add a report', 'ship this without regenerating', or 'incremental deploy'. Authors the delta in the engagement, emits a scoped additive manifest, records it in the delta log, and never regenerates or re-runs setup."
+description: "Add a single delta — a new Case record type or support process, a queue or skill, an entitlement process version, a knowledge data category, a macro set, a report, a Help Center page — to an ALREADY-generated Service Cloud engagement without re-running sc-generate-implementation. Use when the user says 'add a queue to the client', 'new support process', 'version the Gold entitlement', 'add a report to a client', 'ship this change without regenerating', or 'incremental deploy'. Authors the delta in the engagement, emits a scoped additive manifest, records it in the delta log, and never regenerates or re-runs setup."
+playbook_version: "1.1.0"
+playbook_digest: "82f45674fa1bc34f"
 ---
 <!-- served-playbook -->
 # sc-add-delta

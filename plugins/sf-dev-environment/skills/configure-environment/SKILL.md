@@ -1,6 +1,8 @@
 ---
 name: configure-environment
 description: Set up or update Salesforce, GitHub, and JIRA credentials for the sf-dev-environment plugin. Use when the user says "configure environment", "set up credentials", "update Salesforce org", "change GitHub token", "update JIRA settings", "set up dev environment", or "configure SF/GitHub/JIRA". Walks through each service conversationally and saves to a local config file.
+playbook_version: "1.0.0"
+playbook_digest: "736bd3821d74bbb3"
 ---
 <!-- served-playbook -->
 # configure-environment

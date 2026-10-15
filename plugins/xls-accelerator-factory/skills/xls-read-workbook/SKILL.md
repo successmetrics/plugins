@@ -1,6 +1,8 @@
 ---
 name: xls-read-workbook
 description: "Read a customer's workbook to SHAPE — sheet and column labels, inferred types, counts, and the formula graph with literals removed — and write workbook-inventory.json. Cell values never leave the machine. Use when the user says 'read the workbook', 'what is in this spreadsheet', 'inventory the file', 'profile this xlsx', or before any mapping. Also use to diagnose a partial read or a redaction refusal."
+playbook_version: "1.0.0"
+playbook_digest: "476c53478a083f12"
 ---
 <!-- served-playbook -->
 # xls-read-workbook

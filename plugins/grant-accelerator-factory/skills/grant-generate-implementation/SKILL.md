@@ -1,6 +1,8 @@
 ---
 name: grant-generate-implementation
 description: "Turn a customer's requirements into a tailored Salesforce Public Sector Solutions Grantmaking implementation on top of the Grant Accelerator product, without forking the product. Use when the user shares requirements files (RFP, NOFO, discovery notes, transcript, screenshots) and says 'generate an implementation', 'new engagement', 'build an agency's grant program', 'onboard a client', or drops files into an engagement inbox. Orchestrates requirements normalization, use cases, PSS Grantmaking design, org API-name resolution, module scoping, delta scaffolding, CDS role design, fit-and-finish, and client documents."
+playbook_version: "1.0.0"
+playbook_digest: "104dc68efa63ceef"
 ---
 <!-- served-playbook -->
 # grant-generate-implementation

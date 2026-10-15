@@ -1,6 +1,8 @@
 ---
 name: configure-rules
 description: Register external rule sources - GitHub repositories, local files, or URLs - that Claude should learn from and apply during Salesforce development and code fixes. Use when the user says "add my Salesforce rules", "point to my coding standards", "load rules from GitHub", "add a rules file", "configure my development rules", "teach Claude my coding standards", "add rules from a repo", "load my CLAUDE.md", "add my .cursorrules", or "update my rules". Rules are loaded automatically during the deploy loop and applied when fixing errors.
+playbook_version: "1.0.0"
+playbook_digest: "cacdc669bb5d6e40"
 ---
 <!-- served-playbook -->
 # configure-rules

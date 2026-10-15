@@ -1,6 +1,8 @@
 ---
 name: sc-generate-implementation
 description: "Turn a support organisation's requirements into a tailored, generic Service Cloud implementation on top of the Service Cloud Accelerator — Case support processes, Entitlements and milestones, Omni-Channel routing, Lightning Knowledge, self-service Help Center — without forking the product and without Public Sector Solutions. Use when the user shares requirements (RFP, discovery notes, transcript, screenshots of the current desk, an existing org) and says 'generate an implementation', 'new engagement', 'build <company>'s support desk', 'set up their contact center', 'onboard a client', or drops files into an engagement inbox. Orchestrates org assessment, requirements normalisation and triage, licence detection, module scoping, lifecycle-first design, the extension scaffold, the gate, and docs-as-you-go. Not public-sector case management."
+playbook_version: "1.0.0"
+playbook_digest: "14b2c811865020fa"
 ---
 <!-- served-playbook -->
 # sc-generate-implementation

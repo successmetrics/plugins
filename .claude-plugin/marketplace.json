@@ -137,6 +137,44 @@
         "contact-center",
         "accelerator"
       ]
+    },
+    {
+      "name": "311-accelerator-factory",
+      "source": "./plugins/311-accelerator-factory",
+      "description": "Factory skills for the 311 Accelerator: turn a city's 311 / citizen service request requirements into a tailored implementation on Public Sector Solutions \u2014 residents' reports as Public Complaints, the work as Cases in department queues, a ready-made branded resident portal with Customer Community Login, crews on the Salesforce mobile app \u2014 without forking the sm311 package. Checks the org, scopes the footprint, detects the licences a scope triggers, clones request types from the library, generates and deploys the city layer and portal from one config file, gates the build, and adds deltas to a live city.",
+      "version": "0.1.0",
+      "author": {
+        "name": "SuccessMetrics"
+      },
+      "keywords": [
+        "salesforce",
+        "public-sector",
+        "311",
+        "service-requests",
+        "public-complaints",
+        "experience-cloud",
+        "resident-portal",
+        "accelerator"
+      ]
+    },
+    {
+      "name": "agentforce-accelerator-factory",
+      "source": "./plugins/agentforce-accelerator-factory",
+      "description": "Factory skills for Agentforce agents: check an org and its Knowledge, scope and license an agent engagement, design and ground an agent with a bake-off of Salesforce's documented method against alternatives on one test library, author it in Agent Script, publish and test it in Testing Center, keep an accuracy scorecard, and run Agent Ops after every Salesforce release. Builds on Salesforce's own agentforce-generate and agentforce-test skills.",
+      "version": "0.1.0",
+      "author": {
+        "name": "SuccessMetrics"
+      },
+      "keywords": [
+        "salesforce",
+        "agentforce",
+        "agent-script",
+        "data-cloud",
+        "knowledge",
+        "rag",
+        "testing-center",
+        "accelerator"
+      ]
     }
   ]
 }

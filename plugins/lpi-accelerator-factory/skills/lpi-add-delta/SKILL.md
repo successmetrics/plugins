@@ -1,6 +1,14 @@
 ---
 name: lpi-add-delta
 description: "Add a single delta — a new report, dashboard, form, flow, permit/license type, field, or small feature — to an ALREADY-generated LPI engagement without re-running lpi-generate-implementation. Use when the user says 'add a report to a client', 'add a new form', 'add a permit type to the existing build', 'new dashboard for a client', 'ship this change to a client without regenerating', or 'incremental deploy'. Authors the delta in the correct tier, emits a scoped additive package.xml, and records it in the engagement delta-log. Never regenerates, never re-runs seeds."
+playbook_version: "1.2.0"
+playbook_digest: "d7d1c3fb20e484be"
+trigger_precedence:
+  # sm-agent-core decision 27. A phrase may be declared by exactly one
+  # claimant; two produce CONTESTED. This does not change what the model
+  # picks -- it records which skill is supposed to win.
+  - incremental deploy
+  - add a report to a client
 ---
 <!-- served-playbook -->
 # lpi-add-delta

@@ -1,6 +1,8 @@
 ---
 name: xls-generate-implementation
 description: "Turn a customer's spreadsheet application into a tailored Salesforce implementation on top of the Excel Accelerator product, without forking the product. Use when the user shares a workbook and says 'migrate this spreadsheet', 'move this to Salesforce', 'new engagement', 'onboard a client', 'what would this look like as an app', 'replace this workbook', or drops an .xlsx into an engagement inbox. Orchestrates the local shape read, tab classification, object and field mapping, calculation targeting, the stays-outside conversation, module scoping, licence detection, and the decision register a human signs."
+playbook_version: "1.0.0"
+playbook_digest: "8e5d840d37fee7b7"
 ---
 <!-- served-playbook -->
 # xls-generate-implementation

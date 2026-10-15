@@ -1,6 +1,8 @@
 ---
 name: grant-license-check
 description: "Detect the Salesforce add-on LICENSE dependencies a Grantmaking engagement's scope triggers (the PSS Grantmaking add-on itself, Experience Cloud member/login SKUs, OmniStudio/DocGen, Data Cloud, CRM Analytics, Agentforce, Shield, identity/SSO, e-signature) and call them out in the design. Use when analyzing requirements, 'what licenses do we need', 'license dependencies', 'do we need a portal license', or before pricing/deploying an engagement."
+playbook_version: "1.0.0"
+playbook_digest: "e294dfa1d2bdde14"
 ---
 <!-- served-playbook -->
 # grant-license-check

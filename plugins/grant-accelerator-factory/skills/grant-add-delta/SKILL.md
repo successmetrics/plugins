@@ -1,6 +1,13 @@
 ---
 name: grant-add-delta
 description: "Add a single delta — a new report, form, flow, program type, field, or small feature — to an ALREADY-generated Grant Accelerator engagement without re-running grant-generate-implementation. Use when the user says 'add a report to a client', 'add a program type to the existing build', 'new flow for a client', 'ship this change without regenerating', or 'incremental deploy'. Authors the delta in the correct tier, emits a scoped additive package.xml, and records it in the engagement delta-log. Never regenerates, never re-runs seeds."
+playbook_version: "1.1.0"
+playbook_digest: "b3c5172776c16bc3"
+trigger_precedence:
+  # sm-agent-core decision 27. lpi wins the delta family, but does not
+  # OFFER this phrase -- only fi and grant do -- so declaring it there
+  # would be stale on arrival. It goes to a claimant instead.
+  - ship this change without regenerating
 ---
 <!-- served-playbook -->
 # grant-add-delta

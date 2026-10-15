@@ -1,0 +1,25 @@
+{
+  "name": "agentforce-accelerator-factory",
+  "version": "0.1.0",
+  "description": "Factory skills for Agentforce agents: check an org and its Knowledge, scope and license an agent engagement, design and ground an agent with a bake-off of Salesforce's documented method against alternatives on one test library, author it in Agent Script, publish and test it in Testing Center, keep an accuracy scorecard, and run Agent Ops after every Salesforce release. Builds on Salesforce's own agentforce-generate and agentforce-test skills.",
+  "author": {
+    "name": "SuccessMetrics"
+  },
+  "mcpServers": {
+    "sm-agent-core": {
+      "type": "http",
+      "url": "https://agents.successmetrics.io/mcp"
+    }
+  },
+  "keywords": [
+    "salesforce",
+    "agentforce",
+    "agent-script",
+    "data-cloud",
+    "knowledge",
+    "rag",
+    "testing-center",
+    "accelerator"
+  ],
+  "license": "Proprietary"
+}

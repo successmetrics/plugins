@@ -1,6 +1,13 @@
 ---
 name: sc-module-scope
 description: "Select the Service Cloud configuration footprint an engagement needs — Case foundation and support processes, Omni-Channel routing, entitlements and milestones, Lightning Knowledge, self-service Help Center, messaging channels, voice, agent productivity, reporting, surveys, Agentforce for Service — resolving dependencies. Use when scoping a support-desk engagement, 'which modules', 'what does this build involve', 'tailor the footprint', 'do they need Omni', or before estimating."
+playbook_version: "1.0.0"
+playbook_digest: "af9bd3a2277c6a51"
+trigger_precedence:
+  # sm-agent-core decision 27. lpi wins the module-scope family, but does
+  # not OFFER this phrase -- only sc and xls do -- so declaring it there
+  # would be stale on arrival. It goes to a claimant instead.
+  - what does this build involve
 ---
 <!-- served-playbook -->
 # sc-module-scope

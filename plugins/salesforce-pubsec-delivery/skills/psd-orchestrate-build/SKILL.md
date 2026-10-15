@@ -1,6 +1,8 @@
 ---
 name: psd-orchestrate-build
 description: "Drive a Salesforce Public Sector design to deployed, tested, version-controlled code through a closed build-test-fix loop with GitHub and Jira. Creates a Jira Epic per requirement and a Story per use case, a feature branch per use case, generates metadata via the official forcedotcom/sf-skills, generates tests from acceptance criteria, validates and fixes errors iteratively, deploys, opens a PR, and updates traceability. Use after .sfdesign/design.yaml exists and the user wants to build, implement, generate, test, or deploy the implementation, or says 'build the design', 'run the loop', 'implement the requirements', 'check in the code', or 'deploy'. Final stage of the salesforce-pubsec-delivery pipeline; orchestrates the sf-dev-environment plugin (jira-to-implementation, dev-deploy-loop, code-review, pr-description)."
+playbook_version: "1.0.0"
+playbook_digest: "1dc8fd0071cd5042"
 ---
 <!-- served-playbook -->
 # psd-orchestrate-build

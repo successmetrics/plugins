@@ -1,6 +1,8 @@
 ---
 name: grant-module-scope
 description: "Select only the Grant Accelerator modules a customer needs and emit a tailored package.xml, resolving module dependencies. Use when scoping an engagement, 'which modules', 'pick modules', 'tailor the footprint', 'generate a subset package', or deciding what to deploy for a client."
+playbook_version: "1.0.0"
+playbook_digest: "02ddc6395633c1b9"
 ---
 <!-- served-playbook -->
 # grant-module-scope

@@ -1,6 +1,8 @@
 ---
 name: xls-add-delta
-description: "Add a single change — a new report, field, calculation, tab that turned up late, or small feature — to an ALREADY-generated spreadsheet-migration engagement without re-running xls-generate-implementation. Use when the user says 'they found another tab', 'add a field to the client', 'the rate changed', 'add a report', 'ship this without regenerating', or 'incremental deploy'. Authors the delta in the engagement, records it in the delta log, and never re-reads the whole workbook or re-runs the mapping."
+description: "Add a single change — a new report, field, calculation, tab that turned up late, or small feature — to an ALREADY-generated spreadsheet-migration engagement without re-running xls-generate-implementation. Use when the user says 'they found another tab', 'add a field to the client', 'the rate changed', 'add a report to a client', 'ship this change without regenerating', or 'incremental deploy'. Authors the delta in the engagement, records it in the delta log, and never re-reads the whole workbook or re-runs the mapping."
+playbook_version: "1.1.0"
+playbook_digest: "29ba6b917b460c58"
 ---
 <!-- served-playbook -->
 # xls-add-delta

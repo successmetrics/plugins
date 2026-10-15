@@ -1,6 +1,8 @@
 ---
 name: fi-org-resolve
 description: "Error-accommodating reconciliation of the Field Inspection design's assumed PSS object/field API names against a real Salesforce org, before any generation or deploy. Use when pointing the accelerator at a sandbox, 'resolve org names', 'check the org', 'map API names', or before scaffolding/deploying in an engagement. Writes org-map.yaml and gates the build (PASS/BLOCKED) so nothing is generated against a wrong name — and catches orgs missing Visit/InspectionType (PSS not enabled) or WorkOrder."
+playbook_version: "1.0.0"
+playbook_digest: "6438ecaa914ba713"
 ---
 <!-- served-playbook -->
 # fi-org-resolve

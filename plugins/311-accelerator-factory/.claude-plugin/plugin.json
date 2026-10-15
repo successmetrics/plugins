@@ -1,0 +1,25 @@
+{
+  "name": "311-accelerator-factory",
+  "version": "0.1.0",
+  "description": "Factory skills for the 311 Accelerator: turn a city's 311 / citizen service request requirements into a tailored implementation on Public Sector Solutions — residents' reports as Public Complaints, the work as Cases in department queues, a ready-made branded resident portal with Customer Community Login, crews on the Salesforce mobile app — without forking the sm311 package. Checks the org, scopes the footprint, detects the licences a scope triggers, clones request types from the library, generates and deploys the city layer and portal from one config file, gates the build, and adds deltas to a live city.",
+  "author": {
+    "name": "SuccessMetrics"
+  },
+  "mcpServers": {
+    "sm-agent-core": {
+      "type": "http",
+      "url": "https://agents.successmetrics.io/mcp"
+    }
+  },
+  "keywords": [
+    "salesforce",
+    "public-sector",
+    "311",
+    "service-requests",
+    "public-complaints",
+    "experience-cloud",
+    "resident-portal",
+    "accelerator"
+  ],
+  "license": "Proprietary"
+}

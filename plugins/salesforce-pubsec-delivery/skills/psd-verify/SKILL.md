@@ -1,6 +1,8 @@
 ---
 name: psd-verify
 description: "Turn Gherkin acceptance criteria from Public Sector use cases into executable Salesforce tests, run them against the target org, and report pass/fail and coverage per criterion. Use when the user wants to verify a build, generate tests from acceptance criteria, prove a use case is done, check acceptance criteria, run the verification gate, or says 'test this', 'verify UC-001', 'are the acceptance criteria met'. The verification gate of the salesforce-pubsec-delivery pipeline; invoked by psd-orchestrate-build before a use case is marked done."
+playbook_version: "1.2.0"
+playbook_digest: "adb0a861e4017643"
 ---
 <!-- served-playbook -->
 # psd-verify

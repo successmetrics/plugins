@@ -1,6 +1,15 @@
 ---
 name: lpi-org-resolve
 description: "Error-accommodating reconciliation of the LPI design's assumed PSS object/field API names against a real Salesforce org, before any generation or deploy. Use when pointing the accelerator at a sandbox, 'resolve org names', 'check the org', 'map API names', or before scaffolding/deploying in an engagement. Writes org-map.yaml and gates the build (PASS/BLOCKED) so nothing is generated against a wrong name."
+playbook_version: "1.0.0"
+playbook_digest: "5d443d9678f53abb"
+trigger_precedence:
+  # sm-agent-core decision 27. A phrase may be declared by exactly one
+  # claimant; two produce CONTESTED. This does not change what the model
+  # picks -- it records which skill is supposed to win.
+  - check the org
+  - map api names
+  - resolve org names
 ---
 <!-- served-playbook -->
 # lpi-org-resolve

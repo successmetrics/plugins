@@ -1,6 +1,14 @@
 ---
 name: lpi-generate-implementation
 description: "Turn a customer's requirements into a tailored Salesforce Public Sector LPI implementation on top of the LPI Accelerator product, without forking the product. Use when the user shares requirements files (RFP, discovery notes, transcript, screenshots) and says 'generate an implementation', 'new engagement', 'build a city or agency', 'onboard a client', or drops files into an engagement inbox. Orchestrates requirements normalization, use cases, PSS design, org API-name resolution, module scoping, delta scaffolding, and client documents."
+playbook_version: "1.0.0"
+playbook_digest: "72c3ae82ca1d9779"
+trigger_precedence:
+  # sm-agent-core decision 27. The implementation family goes to
+  # sm-scope-engagement, which does not OFFER this phrase -- only the four
+  # generate-implementation skills do. A declaration there would be stale,
+  # so a claimant takes it.
+  - generate an implementation
 ---
 <!-- served-playbook -->
 # lpi-generate-implementation

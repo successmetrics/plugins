@@ -1,6 +1,8 @@
 ---
 name: sm-review-design
 description: "Get senior-architect pushback on a proposed Salesforce Public Sector design before anyone builds it — standard-before-custom alternatives, external and portal access, record ownership, screen completeness, and the basics a quality gate would later fail on. Use when the user has a design, data model or solution approach and asks to 'review this design', 'challenge this', 'is this the right approach', 'have we considered alternatives', 'sanity check the data model', 'will this work for portal users', or before a design review or build kickoff."
+playbook_version: "1.0.0"
+playbook_digest: "eaf1e8a87ffb128c"
 ---
 <!-- served-playbook -->
 # sm-review-design
@@ -10,6 +12,11 @@ This skill's procedure is **served, not shipped**. Call `sm_playbook` with
 exactly — it carries the steps, the gates and this skill's reference documents,
 at your key's tier. Re-fetch it at the start of each session; pass the `digest`
 back as `known_digest` to be told when it changed.
+
+This file's frontmatter records the playbook version and digest it was
+published against. To be served that exact version or refused, pass it as
+`pin` — unlike `known_digest`, a mismatched `pin` refuses rather than warns.
+Leave `pin` out to follow head.
 
 No `sm_playbook` in your tool list means this plugin's `sm-agent-core` connector
 is not yet authorized. Open Settings → Plugins, pick **Sm delivery**, open its

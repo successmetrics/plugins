@@ -1,6 +1,8 @@
 ---
 name: fi-add-delta
 description: "Add a single delta — a new report, asset/device type, condition scale, field, flow tweak, or small feature — to an ALREADY-generated Field Inspection engagement without re-running fi-generate-implementation. Use when the user says 'add a report to a client', 'add a device type', 'new condition band', 'ship this change without regenerating', or 'incremental deploy'. Authors the delta in the correct tier, emits a scoped additive package.xml, and records it in the engagement delta-log. Never regenerates, never re-runs seeds."
+playbook_version: "1.1.0"
+playbook_digest: "4f6671bd876a23dd"
 ---
 <!-- served-playbook -->
 # fi-add-delta

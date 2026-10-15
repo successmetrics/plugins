@@ -1,6 +1,8 @@
 ---
 name: jira-to-implementation
 description: Read a JIRA ticket, understand the full scope, implement the required code changes, deploy to Salesforce, and open a GitHub pull request - all in one flow. Use when the user says "implement JIRA ticket", "work on PROJ-123", "fix PROJ-456", "implement this ticket", "build the feature in JIRA", "do the work for ticket", "take PROJ-123 from ticket to PR", or "implement and open a PR for a ticket". Modelled on Augment's 'Implement Issue #123 and open a pull request' capability.
+playbook_version: "1.0.0"
+playbook_digest: "f6c87109eaaa1010"
 ---
 <!-- served-playbook -->
 # jira-to-implementation

@@ -1,6 +1,8 @@
 ---
 name: grant-org-resolve
 description: "Error-accommodating reconciliation of the Grant Accelerator design's assumed PSS Grantmaking object/field API names against a real Salesforce org, before any generation or deploy. Use when pointing the accelerator at a sandbox, 'resolve org names', 'check the org', 'map API names', or before scaffolding/deploying in an engagement. Writes org-map.yaml and gates the build (PASS/BLOCKED) so nothing is generated against a wrong name — and catches orgs where Grantmaking or Compliant Data Sharing is not yet enabled."
+playbook_version: "1.0.0"
+playbook_digest: "5468f6e214e96847"
 ---
 <!-- served-playbook -->
 # grant-org-resolve

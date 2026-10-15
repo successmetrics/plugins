@@ -1,6 +1,15 @@
 ---
 name: sm-scope-engagement
 description: "Turn a customer's requirements — an RFP, discovery notes, a transcript, legacy screenshots — into a scoped Salesforce Public Sector engagement: structured requirements, matched pre-built content types, the module footprint to deploy, and the add-on licences the scope triggers. Use when the user shares requirements and asks to 'scope this', 'analyse these requirements', 'which modules do we need', 'what licences does this need', 'onboard a client', 'new engagement', or drops an RFP or discovery document. Also the discovery set to put to the customer before anyone estimates — 'what should we ask them', 'discovery questions', 'what do we still not know', 'what drives the size of this'. Covers LPI (licensing/permitting/inspections), Grantmaking and Field Inspection."
+playbook_version: "1.1.0"
+playbook_digest: "25933b25bd3e6128"
+trigger_precedence:
+  # sm-agent-core decision 27: a phrase naming a PHASE that happens
+  # before a product line is chosen goes to sm-delivery, because at
+  # that moment nobody yet knows which accelerator applies.
+  - discovery questions
+  - onboard a client
+  - new engagement
 ---
 <!-- served-playbook -->
 # sm-scope-engagement
@@ -10,6 +19,11 @@ This skill's procedure is **served, not shipped**. Call `sm_playbook` with
 exactly — it carries the steps, the gates and this skill's reference documents,
 at your key's tier. Re-fetch it at the start of each session; pass the `digest`
 back as `known_digest` to be told when it changed.
+
+This file's frontmatter records the playbook version and digest it was
+published against. To be served that exact version or refused, pass it as
+`pin` — unlike `known_digest`, a mismatched `pin` refuses rather than warns.
+Leave `pin` out to follow head.
 
 No `sm_playbook` in your tool list means this plugin's `sm-agent-core` connector
 is not yet authorized. Open Settings → Plugins, pick **Sm delivery**, open its

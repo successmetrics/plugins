@@ -1,6 +1,8 @@
 ---
 name: pr-description
 description: Auto-generate a comprehensive pull request description from git diff, commit history, and linked JIRA ticket context. Use when the user says "write a PR description", "generate PR description", "write PR notes", "create PR body", "describe my changes", "write the pull request description", "generate release notes", or "summarize my PR". Modelled on Augment's auto-generated PR descriptions feature.
+playbook_version: "1.0.0"
+playbook_digest: "dc276dd031e534d2"
 ---
 <!-- served-playbook -->
 # pr-description

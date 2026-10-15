@@ -1,6 +1,8 @@
 ---
 name: xls-module-scope
 description: "Select the workstream footprint a spreadsheet-migration engagement needs — data model, calculation layer, Business Rules Engine, record generation, CRM foundation, documents, feeds and loads, data that stays outside, bulk entry, reporting and the access model. Use when scoping a migration, 'which workstreams', 'what does this build involve', 'tailor the footprint', or before estimating."
+playbook_version: "1.0.0"
+playbook_digest: "f5dd0297f5513bc7"
 ---
 <!-- served-playbook -->
 # xls-module-scope

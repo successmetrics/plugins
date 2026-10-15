@@ -1,6 +1,8 @@
 ---
 name: sc-license-check
-description: "Detect the Salesforce licences a Service Cloud scope triggers — the seat edition itself (Enterprise vs Unlimited), Knowledge user licences, Digital Engagement for messaging channels, Service Cloud Voice plus telephony, Experience Cloud for an authenticated Help Center, Agentforce for Service, Feedback Management, Slack swarming, Workforce Engagement, Field Service, CRM Analytics, Shield, identity, Data 360 — and name what is on the seat. Use when analysing requirements, 'what licences do we need', 'is Knowledge included', 'do we need Digital Engagement', 'what does WhatsApp cost', or before pricing a support-desk engagement."
+description: "Detect the Salesforce licences a Service Cloud scope triggers — the seat edition itself (Enterprise vs Unlimited), Knowledge user licences, Digital Engagement for messaging channels, Service Cloud Voice plus telephony, Experience Cloud for an authenticated Help Center, Agentforce for Service, Feedback Management, Slack swarming, Workforce Engagement, Field Service, CRM Analytics, Shield, identity, Data 360 — and name what is on the seat. Use when analysing requirements, 'what licenses do we need', 'is Knowledge included', 'do we need Digital Engagement', 'what does WhatsApp cost', or before pricing a support-desk engagement."
+playbook_version: "1.0.0"
+playbook_digest: "2f74cbcfaca8e08d"
 ---
 <!-- served-playbook -->
 # sc-license-check

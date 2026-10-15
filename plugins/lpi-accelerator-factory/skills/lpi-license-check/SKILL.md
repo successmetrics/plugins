@@ -1,6 +1,14 @@
 ---
 name: lpi-license-check
 description: "Detect the Salesforce add-on LICENSE dependencies an engagement's scope triggers (Salesforce Maps, Field Service/FSL, Experience Cloud, OmniStudio/DocGen, Data Cloud, CRM Analytics, Agentforce, Shield, identity/SSO, e-signature) and call them out in the design. Use when analyzing requirements, 'what licenses do we need', 'license dependencies', 'do we need Maps or Field Service', or before pricing/deploying an engagement."
+playbook_version: "1.0.0"
+playbook_digest: "168509149c8fb672"
+trigger_precedence:
+  # sm-agent-core decision 27. A phrase may be declared by exactly one
+  # claimant; two produce CONTESTED. This does not change what the model
+  # picks -- it records which skill is supposed to win.
+  - license dependencies
+  - what licenses do we need
 ---
 <!-- served-playbook -->
 # lpi-license-check

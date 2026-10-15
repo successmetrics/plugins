@@ -1,6 +1,8 @@
 ---
 name: xls-map-design
 description: "Turn workbook-inventory.json into a Salesforce design: what each tab actually is, the objects and fields it implies, where every calculation lands (formula field, roll-up, Business Rules Engine decision matrix or expression set, record-triggered or scheduled flow, Apex, or a report), what stays outside the platform, and the normalisation decisions a human must sign. Use after xls-read-workbook, or when the user asks 'what objects does this imply', 'where should these formulas go', 'should this be Apex or a formula', 'what stays in the old system', or 'map this workbook'."
+playbook_version: "1.0.0"
+playbook_digest: "e98ef33e9f1d7af1"
 ---
 <!-- served-playbook -->
 # xls-map-design

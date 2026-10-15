@@ -1,6 +1,8 @@
 ---
 name: psd-start
 description: "Bootstrap a Salesforce Public Sector delivery project: create the .sfdesign/ working directory, install the official forcedotcom/sf-skills, configure GitHub + Jira + Salesforce credentials and coding rules for the closed-loop build, and explain the requirements → use-cases → design → build pipeline. Use at the start of a PSS engagement, when the user says 'start a Salesforce public sector project', 'set up the pipeline', 'connect GitHub and Jira', 'install the Salesforce skills', or 'kick off the design', or before running psd-requirements for the first time."
+playbook_version: "1.0.0"
+playbook_digest: "8c108996cab54f3c"
 ---
 <!-- served-playbook -->
 # psd-start

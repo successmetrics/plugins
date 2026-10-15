@@ -1,6 +1,8 @@
 ---
 name: sc-assess
 description: "Assess an existing Salesforce org BEFORE designing a Service Cloud implementation on it: run the collector's service sections (queues and members, assignment rules, entitlement processes and milestones, Omni routing and presence configs, messaging channels, case status and origin shape, knowledge shape, retired surfaces) and hand the inventory to sm_assess_fit for the routing-collision, SLA-collision, status-model, queue-sprawl, retired-surface and knowledge findings. Use when the user says 'assess the org', 'what will collide', 'is Omni already on', 'what are they standing on', 'brownfield check', or before sc-generate-implementation against any org that has users or cases."
+playbook_version: "1.0.0"
+playbook_digest: "b2803256919ac668"
 ---
 <!-- served-playbook -->
 # sc-assess

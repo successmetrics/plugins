@@ -1,6 +1,8 @@
 ---
 name: lpi-content-library
 description: "Browse, clone, validate, and author pre-built permit-type content packages (forms, stage models, fee matrices, inspection and document checklists) from the LPI Accelerator's content library. Use when scoping or building an engagement's permit types, 'what permit types do we have', 'clone a permit type', 'add a reroof/electrical/demolition permit', 'library of permit types', or when authoring a new reusable type. Types clone into engagements — the library is never forked."
+playbook_version: "1.0.0"
+playbook_digest: "360bea8658e7995c"
 ---
 <!-- served-playbook -->
 # lpi-content-library

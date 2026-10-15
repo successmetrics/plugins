@@ -1,6 +1,8 @@
 ---
 name: fi-generate-implementation
 description: "Turn a public-sector asset-inspection customer's requirements into a tailored implementation on top of the Field Inspection Accelerator product, without forking it. Use when the user shares requirements (RFP, discovery notes, transcript) and says 'generate an implementation', 'new engagement', 'onboard a client', or 'build the agency's inspection program'. Orchestrates requirements normalization, org resolve, module scope, and per-engagement delta scaffolding (asset types, InspectionTypes, condition scales, seed data) into an engagements/CLIENT folder."
+playbook_version: "1.0.0"
+playbook_digest: "bcdfaa54ab267513"
 ---
 <!-- served-playbook -->
 # fi-generate-implementation

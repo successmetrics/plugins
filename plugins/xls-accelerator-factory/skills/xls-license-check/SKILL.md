@@ -1,6 +1,8 @@
 ---
 name: xls-license-check
-description: "Detect the Salesforce licences a spreadsheet-migration scope triggers — the user licence itself (Platform vs a full CRM licence, decided by whether the workbook has a people tab), Business Rules Engine, Big Objects, Salesforce Connect, Experience Cloud, Document Generation, Shield and the integration effort behind every pasted extract. Use when analysing a workbook, 'what licences do we need', 'Platform or Sales Cloud', 'do we need Business Rules Engine', 'how much will this cost', or before pricing a migration."
+description: "Detect the Salesforce licences a spreadsheet-migration scope triggers — the user licence itself (Platform vs a full CRM licence, decided by whether the workbook has a people tab), Business Rules Engine, Big Objects, Salesforce Connect, Experience Cloud, Document Generation, Shield and the integration effort behind every pasted extract. Use when analysing a workbook, 'what licenses do we need', 'Platform or Sales Cloud', 'do we need Business Rules Engine', 'how much will this cost', or before pricing a migration."
+playbook_version: "1.0.0"
+playbook_digest: "bb1f3929ed1159ae"
 ---
 <!-- served-playbook -->
 # xls-license-check
