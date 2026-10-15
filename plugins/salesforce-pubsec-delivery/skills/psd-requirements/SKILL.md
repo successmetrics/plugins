@@ -1,8 +1,8 @@
 ---
 name: psd-requirements
 description: "Ingest and normalize customer requirements for a Salesforce Public Sector Solutions engagement, enrich them with web research, map each to a PSS module, and flag out-of-the-box vs. custom fit. Use when the user provides customer requirements, an RFP, a discovery document, meeting notes, or a transcript and wants them turned into structured Salesforce requirements; or says 'analyze these requirements', 'start a PSS design', 'build requirements', or names PSS modules like Licensing/Permitting/Inspections, Complex Case Management, Grantmaking, Field Service, Service Cloud, or Experience Cloud. First stage of the salesforce-pubsec-delivery pipeline; writes .sfdesign/requirements.yaml."
-playbook_version: "1.2.0"
-playbook_digest: "293345bdc7561b2e"
+playbook_version: "1.3.0"
+playbook_digest: "e75e2d59062353c8"
 ---
 <!-- served-playbook -->
 # psd-requirements
