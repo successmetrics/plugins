@@ -5,7 +5,7 @@ auth and your workbook — things that must never transit our service. They are
 runners: the rules, thresholds and manifests they apply are fetched at run time
 from `sm-agent-core` with your engagement key and are not in these packages.
 
-Current release: **`tools-0.19.0-0.3.1-0.1.0`** — sm-gates 0.19.0, sm-collector 0.3.1, sm-workbook 0.1.0.
+Current release: **`tools-0.24.0-0.3.1-0.1.0`** — sm-gates 0.24.0, sm-collector 0.3.1, sm-workbook 0.1.0.
 
 ## Install
 
@@ -16,9 +16,9 @@ pip install -r https://raw.githubusercontent.com/successmetrics/plugins/main/too
 or one package at a time (order matters — `sm-gates` supplies the rules client):
 
 ```bash
-pip install "sm-gates @ https://github.com/successmetrics/plugins/releases/download/tools-0.19.0-0.3.1-0.1.0/sm_gates-0.19.0-py3-none-any.whl"
-pip install "sm-collector @ https://github.com/successmetrics/plugins/releases/download/tools-0.19.0-0.3.1-0.1.0/sm_collector-0.3.1-py3-none-any.whl"
-pip install "sm-workbook @ https://github.com/successmetrics/plugins/releases/download/tools-0.19.0-0.3.1-0.1.0/sm_workbook-0.1.0-py3-none-any.whl"
+pip install "sm-gates @ https://github.com/successmetrics/plugins/releases/download/tools-0.24.0-0.3.1-0.1.0/sm_gates-0.24.0-py3-none-any.whl"
+pip install "sm-collector @ https://github.com/successmetrics/plugins/releases/download/tools-0.24.0-0.3.1-0.1.0/sm_collector-0.3.1-py3-none-any.whl"
+pip install "sm-workbook @ https://github.com/successmetrics/plugins/releases/download/tools-0.24.0-0.3.1-0.1.0/sm_workbook-0.1.0-py3-none-any.whl"
 ```
 
 Python 3.10 or newer. No account, no token, no clone.
@@ -45,7 +45,7 @@ sm-workbook --file <book.xlsx>   # workbook shape for the Excel migration line (
 
 | wheel | sha256 |
 |---|---|
-| `sm_gates-0.19.0-py3-none-any.whl` | `bf52061a5ee929a8b5347b6cf184b7817ff28a23a237e6d23efe1fe01c6c8265` |
+| `sm_gates-0.24.0-py3-none-any.whl` | `88d361779b70ce529e23726916504853de3a9aca270858cabfa4c86e804c354d` |
 | `sm_collector-0.3.1-py3-none-any.whl` | `d9f7968a400d93c1e89e3504fa1d86c773e6153c5ba1545628419a02907ba3b5` |
 | `sm_workbook-0.1.0-py3-none-any.whl` | `ab100a4fb1c23902bebf63d715c857eedf4116a0c781e082150b9e780f819745` |
 
