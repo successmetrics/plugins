@@ -11,8 +11,8 @@ trigger_precedence:
   - test-first
   - test plan for this build
   - what tests does this engagement need
-playbook_version: "1.2.0"
-playbook_digest: "93d3e7775125f3a5"
+playbook_version: "1.5.0"
+playbook_digest: "fcfcc9f6662000a5"
 ---
 <!-- served-playbook -->
 # sm-quality-gates

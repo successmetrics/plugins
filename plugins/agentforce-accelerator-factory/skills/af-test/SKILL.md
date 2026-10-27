@@ -1,8 +1,8 @@
 ---
 name: af-test
 description: "Run an Agentforce agent's test library in Testing Center and record its accuracy scorecard — topic, action and outcome assertions per case, full and partial answers, results by kind, regressions against the previous run — and gate on it. Use when the user says 'test the agent', 'run the agent tests', 'score the agent', 'accuracy', 'did tuning help', 'is the agent green', or after any change to an agent."
-playbook_version: "1.0.0"
-playbook_digest: "995454c0009637ec"
+playbook_version: "1.1.0"
+playbook_digest: "fbd80b1d17f4cb29"
 ---
 <!-- served-playbook -->
 # af-test

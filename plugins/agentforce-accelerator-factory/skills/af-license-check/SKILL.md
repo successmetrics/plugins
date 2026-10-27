@@ -1,8 +1,8 @@
 ---
 name: af-license-check
 description: "Detect the Salesforce licences and consumption meters an Agentforce scope triggers — Agentforce for employees (per-user add-on or Flex Credits), Data 360 credits for grounding, Knowledge, Testing Center runs, metered actions, public-facing conversations and channels, analytics, voice — and what it does not need. Use when the user says 'what licences does the agent need', 'Agentforce pricing', 'Flex Credits or per user', 'do we need Data Cloud', 'how much will the agent cost to run', or before pricing an agent."
-playbook_version: "1.0.0"
-playbook_digest: "ad6851a4ede6cd56"
+playbook_version: "1.1.0"
+playbook_digest: "73785106c13f923f"
 ---
 <!-- served-playbook -->
 # af-license-check

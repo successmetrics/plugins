@@ -1,8 +1,8 @@
 ---
 name: grant-test
 description: "Test-first quality gate for Grant Accelerator engagements. Asserts the basics that must ALWAYS be present — list views, related lists, detail-page fields, quick actions per record type, persona access — plus runs the Apex and Jest suites, as ONE gate that blocks the deploy on critical failures. Use when the user says 'run the tests', 'test-first', 'gate the deploy', 'check the basics', 'verify list views / related lists / quick actions / persona access', 'is the build green', 'add a test for this customer', or before ANY engagement_deploy.sh / bootstrap_org.sh / grant-add-delta. Also answers 'what tests does this engagement need' and 'test plan for this build' for a SALESFORCE build specifically — persona and channel contexts, flow branch and fault paths, refusal paths, money invariants, portal run-as. A testing strategy for anything that is not a Salesforce build belongs to the generic engineering testing-strategy skill."
-playbook_version: "1.1.0"
-playbook_digest: "dd4ec08f0d41c0ea"
+playbook_version: "1.2.0"
+playbook_digest: "84e35161e014263e"
 ---
 <!-- served-playbook -->
 # grant-test

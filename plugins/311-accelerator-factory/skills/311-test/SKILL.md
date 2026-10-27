@@ -1,8 +1,8 @@
 ---
 name: 311-test
 description: "Gate a 311 city build before anyone tests by hand — queues, list views, request types, record type, statuses that actually close, settings and the public portal address, the live site, guest access, the resident profile, GIS remote site, notice address, plus the Apex suite and the generator tests — one gate that blocks on failure and names what it did not check. Use when the user says 'run the 311 tests', 'gate the deploy', 'check the basics', 'is the build green', 'verify the city build', or after setup_city.sh and before UAT."
-playbook_version: "1.0.0"
-playbook_digest: "0520de71661c5546"
+playbook_version: "1.1.0"
+playbook_digest: "39ba9a6391bd848f"
 ---
 <!-- served-playbook -->
 # 311-test

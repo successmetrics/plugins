@@ -1,8 +1,8 @@
 ---
 name: 311-license-check
 description: "Detect the Salesforce licences a 311 scope triggers — Public Sector Solutions seats and the Public Sector Access licence, Customer Community Login for residents who sign in, and the add-ons a city might ask for (SMS, an AI assistant, Knowledge authors, surveys, Salesforce Maps, Field Service) — and name what the scope does NOT need. Use when analysing 311 requirements, 'what licenses do we need', 'do residents need a licence', 'do crews need Field Service', or before pricing a 311 engagement."
-playbook_version: "1.0.0"
-playbook_digest: "76b2206b78b34931"
+playbook_version: "1.1.0"
+playbook_digest: "65935069a0af9982"
 ---
 <!-- served-playbook -->
 # 311-license-check
