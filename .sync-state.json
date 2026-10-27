@@ -5,7 +5,7 @@
     {
       "name": "sm-delivery",
       "digest": "4c160e55b0a2c4d0",
-      "source_commit": "087ee6d"
+      "source_commit": "e5a6e50"
     },
     {
       "name": "lpi-accelerator-factory",
@@ -49,8 +49,8 @@
     },
     {
       "name": "agentforce-accelerator-factory",
-      "digest": "8c88039f0a381e75",
-      "source_commit": "1035da6"
+      "digest": "84996c565a0a6f43",
+      "source_commit": "89d554b"
     }
   ]
 }

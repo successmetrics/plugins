@@ -1,7 +1,7 @@
 {
   "name": "agentforce-accelerator-factory",
-  "version": "0.2.0",
-  "description": "Factory skills for Agentforce agents: check an org and its Knowledge, scope and license an agent engagement, design and ground an agent with a bake-off of Salesforce's documented method against alternatives on one test library, author it in Agent Script, publish and test it in Testing Center, keep an accuracy scorecard, and run Agent Ops after every Salesforce release. Also: contact center call intelligence on Salesforce Voice (calls that log themselves with a wrap-up, sentiment and QA) and case documentation and routing on Service Cloud. Builds on Salesforce's own agentforce-generate and agentforce-test skills.",
+  "version": "0.3.0",
+  "description": "Factory skills for Agentforce agents: check an org and its Knowledge, scope and license an agent engagement, design and ground an agent with a bake-off of Salesforce's documented method against alternatives on one test library, author it in Agent Script, publish and test it in Testing Center, keep an accuracy scorecard, and run Agent Ops after every Salesforce release. Also: contact center call intelligence on Salesforce Voice (calls that log themselves with a wrap-up, sentiment and QA) case documentation and routing on Service Cloud; an after-hours and level-1 voice line for calls a NICE CXone or Webex contact center hands over; and member status from several systems through Data 360, with a fit check first. Builds on Salesforce's own agentforce-generate and agentforce-test skills.",
   "author": {
     "name": "SuccessMetrics"
   },
@@ -23,7 +23,10 @@
     "salesforce",
     "salesforce-voice",
     "service-cloud",
-    "testing-center"
+    "testing-center",
+    "voice-agent",
+    "data-360",
+    "identity-resolution"
   ],
   "license": "Proprietary"
 }

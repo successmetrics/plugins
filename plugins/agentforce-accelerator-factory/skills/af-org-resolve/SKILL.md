@@ -1,8 +1,8 @@
 ---
 name: af-org-resolve
 description: "Check whether a Salesforce org is ready to build, ground and test an Agentforce agent — Agentforce and Einstein settings, Data Cloud provisioned, Knowledge enabled, namespace, API and CLI versions, Data Cloud access for the agent user, agents already in the org — and name the steps only a person can do in Setup. Use when the user says 'check the org for Agentforce', 'is this org ready for an agent', 'agent readiness', 'can we build the agent here', 'connect the build sandbox', or before the first agent build in an org."
-playbook_version: "1.0.0"
-playbook_digest: "b3a1eccac5264782"
+playbook_version: "1.1.0"
+playbook_digest: "29061169780cf560"
 ---
 <!-- served-playbook -->
 # af-org-resolve
