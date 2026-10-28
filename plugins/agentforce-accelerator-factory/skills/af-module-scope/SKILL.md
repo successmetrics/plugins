@@ -1,8 +1,8 @@
 ---
 name: af-module-scope
 description: "Select the Agentforce workstreams an engagement needs — the grounded assistant, knowledge readiness, agent actions into records, a public channel, Agent Ops, additional languages — from the customer's requirements, and name what they are not getting. Use when the user says 'scope the agent', 'which agent workstreams', 'what does this agent project include', 'tailor the footprint', or before estimating an Agentforce engagement."
-playbook_version: "1.0.0"
-playbook_digest: "4ec8a93767ce0be7"
+playbook_version: "1.1.0"
+playbook_digest: "e66a41bb9897c16a"
 ---
 <!-- served-playbook -->
 # af-module-scope

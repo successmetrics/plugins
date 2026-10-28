@@ -1,8 +1,8 @@
 ---
 name: af-generate-implementation
 description: "Design, ground, build and publish an Agentforce agent end to end from a customer's use case — design document, grounding bake-off (Salesforce's documented method against alternatives on one test library), Data Library, Agent Script authoring from the base template, validate, publish, activate — without hand edits between build and green. Use when the user says 'build the agent', 'new Agentforce agent', 'generate the agent', 'agent from this use case', 'set up the grounding', 'create the data library', or starts an Agentforce engagement."
-playbook_version: "1.2.0"
-playbook_digest: "3f9ebb42a09c3b89"
+playbook_version: "1.3.0"
+playbook_digest: "cce9b81a85b126f6"
 ---
 <!-- served-playbook -->
 # af-generate-implementation
