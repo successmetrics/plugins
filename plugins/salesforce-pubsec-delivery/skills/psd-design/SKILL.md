@@ -1,8 +1,8 @@
 ---
 name: psd-design
 description: "Translate Public Sector use cases into a Salesforce technical design — data model, fields, validation rules, ownership and sharing, roles, permission sets/groups, business processes (Flows and Business Rules Engine), OmniStudio, LWC, Experience Cloud sites, and integrations — built against out-of-the-box Public Sector Solutions objects first. Use after .sfdesign/use-cases.yaml exists and the user wants a Salesforce design, data model, design document, or solution architecture for a PSS engagement, or says 'design this', 'create the data model', 'map to Salesforce'. Third stage of the salesforce-pubsec-delivery pipeline; writes .sfdesign/design.yaml and .sfdesign/traceability.md, and tags every element with the official forcedotcom/sf-skill that will build it."
-playbook_version: "1.2.1"
-playbook_digest: "62f70dff9318275f"
+playbook_version: "1.3.0"
+playbook_digest: "6bd60cbb1c2dcbff"
 ---
 <!-- served-playbook -->
 # psd-design

@@ -1,8 +1,8 @@
 ---
 name: sm-review-design
 description: "Get senior-architect pushback on a proposed Salesforce Public Sector design before anyone builds it — standard-before-custom alternatives, external and portal access, record ownership, screen completeness, and the basics a quality gate would later fail on. Use when the user has a design, data model or solution approach and asks to 'review this design', 'challenge this', 'is this the right approach', 'have we considered alternatives', 'sanity check the data model', 'will this work for portal users', or before a design review or build kickoff."
-playbook_version: "1.0.0"
-playbook_digest: "eaf1e8a87ffb128c"
+playbook_version: "1.1.0"
+playbook_digest: "4ef4e2af06ebf2d9"
 ---
 <!-- served-playbook -->
 # sm-review-design
