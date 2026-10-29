@@ -4,8 +4,8 @@
   "plugins": [
     {
       "name": "sm-delivery",
-      "digest": "4c160e55b0a2c4d0",
-      "source_commit": "ff7a453"
+      "digest": "15fa1dcbc1461302",
+      "source_commit": "d879d9b"
     },
     {
       "name": "lpi-accelerator-factory",
@@ -24,8 +24,8 @@
     },
     {
       "name": "salesforce-pubsec-delivery",
-      "digest": "7010977def2d4025",
-      "source_commit": "673fc05"
+      "digest": "c8d64be76b3f7d63",
+      "source_commit": "f3e38c7"
     },
     {
       "name": "sf-dev-environment",
