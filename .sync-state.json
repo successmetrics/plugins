@@ -5,7 +5,7 @@
     {
       "name": "sm-delivery",
       "digest": "15fa1dcbc1461302",
-      "source_commit": "d879d9b"
+      "source_commit": "22198b2"
     },
     {
       "name": "lpi-accelerator-factory",
@@ -25,7 +25,7 @@
     {
       "name": "salesforce-pubsec-delivery",
       "digest": "c8d64be76b3f7d63",
-      "source_commit": "f3e38c7"
+      "source_commit": "b96d9f8"
     },
     {
       "name": "sf-dev-environment",
