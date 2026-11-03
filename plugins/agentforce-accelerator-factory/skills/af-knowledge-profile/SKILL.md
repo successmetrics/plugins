@@ -1,8 +1,8 @@
 ---
 name: af-knowledge-profile
 description: "Draft and confirm an Agentforce project's knowledge profile before requirements: the sources and which wins, the context dimensions an answer depends on (plan, member group, year), what a right answer states, and what the agent must never do, seeded from a domain pack; check source files before upload; sort behaviour, knowledge and test questions. Use when the user says 'knowledge profile', 'what does an answer depend on', 'start an agent project from these documents', 'check these files before upload', or after the Brief of an Agentforce project."
-playbook_version: "1.0.0"
-playbook_digest: "5de55f1638ffa7c0"
+playbook_version: "1.1.0"
+playbook_digest: "e04fa1646606b931"
 ---
 <!-- served-playbook -->
 # af-knowledge-profile

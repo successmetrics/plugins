@@ -1,8 +1,8 @@
 ---
 name: af-add-delta
 description: "Add one change to a live Agentforce agent — a new topic or intent, a new source, an instruction fix, a new action, a changed refusal — without rebuilding it: change the design, add its test cases first, re-render, publish to the test sandbox, rerun the whole library and record the scorecard row. Use when the user says 'add a topic to the agent', 'the agent got this wrong', 'add a question', 'add an action', 'new source for the agent', 'tune the agent', or 'incremental change to the agent'."
-playbook_version: "1.0.0"
-playbook_digest: "b4f9479e9625c634"
+playbook_version: "1.1.0"
+playbook_digest: "e5579d9c072f3fcf"
 ---
 <!-- served-playbook -->
 # af-add-delta

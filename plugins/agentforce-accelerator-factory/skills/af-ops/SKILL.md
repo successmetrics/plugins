@@ -1,8 +1,8 @@
 ---
 name: af-ops
 description: "Agent Ops for a live Agentforce agent — rerun its test library on Salesforce release previews, after the org upgrades, after Knowledge or source changes and monthly; compare with the last scorecard; open regression findings with both answers and the Builder trace; publish the customer scorecard. Use when the user says 'agent ops', 'release regression', 'check the agent after the release', 'is the agent still accurate', 'monthly agent check', 'scorecard for the customer', or on a schedule."
-playbook_version: "1.0.0"
-playbook_digest: "e36d57db2d6d3550"
+playbook_version: "1.1.0"
+playbook_digest: "f7eb531db6a43c7b"
 ---
 <!-- served-playbook -->
 # af-ops

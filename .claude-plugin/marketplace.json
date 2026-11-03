@@ -13,7 +13,7 @@
       "name": "sm-delivery",
       "source": "./plugins/sm-delivery",
       "description": "SuccessMetrics delivery tooling. Org assessment, scoping, design review, spreadsheet-to-platform migration, quality gates, finding triage, reported-issues triage and the project start method for Salesforce engagements. The judgment runs on sm-agent-core; these skills gather input, call it, and render the result.",
-      "version": "0.18.2",
+      "version": "0.18.3",
       "author": {
         "name": "SuccessMetrics"
       }
@@ -123,7 +123,7 @@
       "name": "sc-accelerator-factory",
       "source": "./plugins/sc-accelerator-factory",
       "description": "Factory skills for the Service Cloud Accelerator: turn a support organisation's requirements into a tailored, generic Service Cloud implementation \u2014 Case support processes, Entitlements and milestones, Omni-Channel routing, Lightning Knowledge and a self-service Help Center \u2014 without forking the product and without Public Sector Solutions. Assesses an existing org for routing and SLA collisions and retired surfaces, scopes the configuration footprint, detects the add-on licences a scope triggers, gates the build on a support process whose closed statuses close, and adds deltas incrementally. Not public-sector case management.",
-      "version": "0.2.1",
+      "version": "0.2.2",
       "author": {
         "name": "SuccessMetrics"
       },
@@ -161,7 +161,7 @@
       "name": "agentforce-accelerator-factory",
       "source": "./plugins/agentforce-accelerator-factory",
       "description": "Factory skills for Agentforce agents: draft a knowledge profile from a domain pack (what answers depend on, which source wins, what must be refused) and check source files before upload, choose the building block (no agent, a standard FAQ agent, a prompt template or a custom agent), check an org and its Knowledge, scope and license an agent engagement, design and ground an agent with a bake-off of Salesforce's documented method against alternatives on one test library, author it in Agent Script, publish and test it in Testing Center, keep an accuracy scorecard by layer with a release threshold, and run Agent Ops after every Salesforce release. Also: contact center call intelligence on Salesforce Voice (calls that log themselves with a wrap-up, sentiment and QA) case documentation and routing on Service Cloud; an after-hours and level-1 voice line for calls a NICE CXone or Webex contact center hands over; and member status from several systems through Data 360, with a fit check first. Builds on Salesforce's own agentforce-generate and agentforce-test skills.",
-      "version": "0.4.0",
+      "version": "0.4.1",
       "author": {
         "name": "SuccessMetrics"
       },

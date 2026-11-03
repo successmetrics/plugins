@@ -1,8 +1,8 @@
 ---
 name: sm-project-start
 description: "INTERNAL. Start a project — a delivery, a takeover of someone else's org, an org assessment or a pursuit: inventory what it was given (a reference application, an existing org, a backlog, one of our packages, an agent's knowledge, a SOW or RFP, or just a SOW and notes), draw the epic map with evidence and scope colours, assign week-one tasks by role, plan the workshops and build the kickoff deck and workshop packs. Use when the user says 'start the project', 'kick off the project', 'first week plan', 'week one tasks', 'kickoff deck', 'mobilise the team', 'prepare for the workshops', 'how do we start this project', 'plan the handover from the previous partner', 'week one of the takeover', 'bid plan for this RFP', or 'what do we share at kickoff'."
-playbook_version: "1.2.0"
-playbook_digest: "ef888539fcbe99cb"
+playbook_version: "1.3.0"
+playbook_digest: "9da396d532c9ee01"
 ---
 <!-- served-playbook -->
 # sm-project-start

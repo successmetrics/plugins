@@ -4,8 +4,8 @@
   "plugins": [
     {
       "name": "sm-delivery",
-      "digest": "15fa1dcbc1461302",
-      "source_commit": "22198b2"
+      "digest": "0d8fd37251a93b7f",
+      "source_commit": "a563c9d"
     },
     {
       "name": "lpi-accelerator-factory",
@@ -39,8 +39,8 @@
     },
     {
       "name": "sc-accelerator-factory",
-      "digest": "3a111ae308555f33",
-      "source_commit": "45f2149"
+      "digest": "b87fd5a5e4d43b9a",
+      "source_commit": "bb42a9a"
     },
     {
       "name": "311-accelerator-factory",
@@ -49,8 +49,8 @@
     },
     {
       "name": "agentforce-accelerator-factory",
-      "digest": "08e8ae62d533ffaa",
-      "source_commit": "80ab41c"
+      "digest": "65b18a2ebd6161b7",
+      "source_commit": "56e61bc"
     }
   ]
 }
