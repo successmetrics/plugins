@@ -4,8 +4,8 @@
   "plugins": [
     {
       "name": "sm-delivery",
-      "digest": "0d8fd37251a93b7f",
-      "source_commit": "a563c9d"
+      "digest": "98631c44773ade6e",
+      "source_commit": "cea525d"
     },
     {
       "name": "lpi-accelerator-factory",
